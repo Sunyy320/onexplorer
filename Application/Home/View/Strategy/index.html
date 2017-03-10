@@ -1,0 +1,159 @@
+<title>Onexplorer旅游攻略</title>
+<load file="__PUBLIC__/Css/travelStrategy.css"/>
+<load file="__PUBLIC__/Js/tour.js"/>
+
+<!--照片轮播js开始-->
+<script type="text/javascript">
+    var t = n =0, count;
+    $(document).ready(function(){
+        count=$("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+        $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+        $("#banner li").click(function() {
+
+            var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
+            n = i;
+            if (i >= count) return;
+            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+            $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
+            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+            document.getElementById("banner").style.background="";
+            $(this).toggleClass("on");
+            $(this).siblings().removeAttr("class");
+        });
+        t = setInterval("showAuto()", 4000);
+        $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+    })
+
+    function showAuto()
+    {
+        n = n >=(count -1) ?0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+
+    }
+</script>
+<!--照片轮播js结束-->
+
+
+<div id="TS_thirdPart">
+    <div class="TS_line"></div>
+
+    <!--图片轮播---------->
+    <div id="banner">
+        <div id="banner_bg"></div>
+        <!--标题背景-->
+        <div id="banner_info"></div>
+        <!--标题-->
+        <ul>
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div id="banner_list">
+
+            <volist name="pic" id="val">
+                <a href="<{$val.url}>" target="_blank">
+                    <img src="<{$val.pic}>" title="<{$val.title}>" alt="<{$val.title}>"/></a>
+            </volist>
+
+        </div>
+    </div>
+    <!---------------------->
+
+    <!--主体内容-->
+    <div id="TS_article">
+
+        <!--左边推荐开始-->
+        <div class="TS_articleLeft">
+            <div class="TS_leftHeadAll">
+                <img class="TS_leftHeadPicture" src="__PUBLIC__/Images/common/leftHead.png">
+                <div class="TS_leftHead">旅游攻略，懂你所需</div>
+            </div>
+
+            <!--按照点赞量进行推荐开始-->
+            <div class="TS_LeftRecommendName">精品推荐</div>
+            <ul class="TS_leftRecommend">
+
+                <volist name="tuij" id="val">
+                    <li><a href="<{:U('Strategy/showct')}>?id=<{$val.id}>&name=<{$val.username}>"><{$val.longtitle}></a></li>
+                </volist>
+            </ul>
+            <!--按照点赞量进行推荐结束-->
+
+            <!--按时间顺利选出文章推荐开始-->
+            <div class="TS_LeftRecommendName">最新出炉</div>
+            <ul class="TS_leftRecommend">
+                <volist name="last" id="val">
+                    <li><a href="<{:U('Strategy/showct')}>?id=<{$val.id}>&name=<{$val.username}>"><{$val.longtitle}></a></li>
+                </volist>
+            </ul>
+            <!--按时间顺利选出文章推荐结束-->
+
+
+            <!--导航条链接开始-->
+            <div class="TS_LeftRecommendName">友情直通</div>
+            <ul class="TS_leftRecommend">
+                <li><a href="<{:U('Index/index')}>">再见首页</a></li>
+                <li><a href="<{:U('Happy/index')}>">欢乐交流</a></li>
+                <li><a href="<{:U('Topic/index')}>">踏上论坛</a></li>
+                <li><a href="<{:U('Tour/index')}>">么么组队</a></li>
+            </ul>
+            <!--导航条链接结束-->
+
+
+        </div>
+        <!--左边推荐结束-->
+
+
+        <!--右边内容开始-->
+        <div class="TS_articleRight">
+            <ul>
+                <volist name="res" id="vo" >
+
+                    <li>
+                        <div class="TS_textPicture">
+                            <a href="__APP__/Home/Strategy/showct?id=<{$vo.id}>&name=<{$vo.username}>">
+                                <img src="<{$vo.imgsrc}>">
+                            </a>
+                        </div>
+
+                        <div class="TS_textContent">
+                            <div class="TS_textHead">
+                                <a href="__APP__/Home/Strategy/showct?id=<{$vo.id}>&name=<{$vo.username}>" >
+                                    【<{$vo.shortitle}>】<{$vo.longtitle}>
+                                </a>
+                            </div>
+
+                            <div class="TS_textIntro">
+                                <a href="__APP__/Home/Strategy/showct?id=<{$vo.id}>&name=<{$vo.username}>">
+                                    <{$vo.shortcontent}>.......
+                                </a>
+                            </div>
+
+                            <div class="TS_textInfor">
+                                <img src="__PUBLIC__/Images/common/dingwei.png">
+                                <div class="TS_inforLocation"><{$vo.place}></div>
+                                <div class="TS_inforAuthor">By&nbsp;<span><{$vo.username}></span></div>
+                            </div>
+                            <div class="TS_textDingnum"><{$vo.supportsum}>人</div>
+                            <div class="TS_textDing">
+                                <a href="__APP__/Home/Strategy/showct?id=<{$vo.id}>&name=<{$vo.username}>"><img src="__PUBLIC__/Images/common/ding.png"></a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </volist>
+
+
+            </ul>
+            <div class="TS_rightPageNum"><div class="pagelist"><{$page}></div></div>
+            <div class="TS_articleRightTail"></div>
+        </div>
+        <!--右边内容结束-->
+    </div>
+    <div id="TS_tail"></div>
+</div>
+

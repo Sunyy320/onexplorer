@@ -1,0 +1,366 @@
+body
+{
+margin:0px;
+border:0px;
+padding:0px;
+background-image:url(../fixedpicture/wenli.jpg);
+
+}
+.gerenxinxi_konge
+{
+  margin-right:70px;
+}
+.gerenxinxi_konge1
+{
+  margin-right:30px;
+}
+.gerenxinxi_konge2
+{
+  margin-right:15px;
+}
+.gerenxinxi_link:link
+{
+   	color:red;
+	text-decoration:none;
+}
+.gerenxinxi_link:visited
+{
+   	color:#5B9BD5;
+	text-decoration:none;
+}
+.gerenxinxi_link:hover
+{
+   	color:blue;
+	text-decoration:none;
+}
+.gerenxinxi_navlink:link
+{
+	color:white;
+	text-decoration:none;
+}
+.gerenxinxi_navlink:visited
+{
+	color:white;
+	text-decoration:none;
+}
+.gerenxinxi_navlink:hover
+{
+	color:black;
+	text-decoration:none;
+}
+.gerenxinxi_currentnavlink
+{
+	color:black;
+	text-decoration:none;
+}
+.gerenxinxi1_huodong
+{
+	display:none;
+	width:100%;
+	height:auto;
+	min-height:100px;
+	margin-top:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #E8E8FF;
+    position:relative;
+    background-color:#E8E8FF;	
+}
+.gerenxinxi1_huodong:hover
+{
+	background-color:white;
+}
+.gerenxinxi1_biaotilink:link
+{
+	color:black;
+	text-decoration:none;
+}
+.gerenxinxi1_biaotilink:visited
+{
+	color:black;
+	text-decoration:none;
+}
+.gerenxinxi1_biaotilink:hover
+{
+	color:blue;
+	text-decoration:underline;
+}
+.gerenxinxi1_zuzhangxinxilink
+{
+	color:grey;
+	text-decoration:none;
+}
+.gerenxinxi2_onmouse
+{
+	background-color:#E8E8FF;
+	display:none;
+}
+.gerenxinxi2_onmouse:hover
+{
+	background-color:white;
+}
+.gerenxinxi2_biaotilink:link
+{
+	color:blue;
+	text-decoration:none;
+}
+.gerenxinxi2_biaotilink:visited
+{
+	color:blue;
+	text-decoration:none;
+}
+.gerenxinxi2_biaotilink:hover
+{
+	color:blue;
+	text-decoration:underline;
+}
+.gerenxinxi2_tiezhuxinxi
+{
+	color:grey;
+	text-decoration:none;
+}
+.gerenxinxi3_lejiaoliutiezi
+{
+	width:100%;
+	height:auto;
+	min-height:100px;
+	margin-top:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #E8E8FF;
+    position:relative;
+    background-color:#E8E8FF;	
+	line-height:40px;
+
+}
+.gerenxinxi3_lejiaoliutiezi:hover
+{
+	background-color:white;
+}
+.gerenxinxi3_biaotilink:link
+{
+	color:blue;
+	text-decoration:none;
+}
+.gerenxinxi3_biaotilink:visited
+{
+	color:blue;
+	text-decoration:none;
+}
+.gerenxinxi3_biaotilink:hover
+{
+	color:blue;
+	text-decoration:underline;
+}
+
+#preview
+{
+	width:150px;
+	height:150px;
+	border:1px solid #000;
+	overflow:hidden;
+}
+#imghead 
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+}
+.gerenxinxi_xiaoshou
+{
+	cursor:pointer;
+}
+.gerenxinxi_tieziupon:hover
+{
+	color:blue;
+	background-color:#E8E8FF;
+	
+}
+.grxx_dengluzhuce1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:30px;
+	position:relative;
+	background-color:#F0F0F0;
+}
+.grxx_dengluzhuce2
+{
+	width:970px;
+	height:auto;
+	min-height:30px;
+	margin:auto;
+	position:relative;
+	font-size:20px;
+	color:#3A9D9A;
+}
+.grxx_daohangtiao1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:50px;
+	position:relative;
+	background-color:#5B9BD5;
+	
+}
+.grxx_daohangtiao2
+{
+	width:970px;
+	height:auto;
+	min-height:50px;
+	margin:auto;
+	position:relative;
+	font-size:33px;
+	color:white;
+	vertical-align:middle;
+}
+.grxx_lianxilan1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:300px;
+	position:relative;
+	background-color:#BFBFBF;
+}
+.grxx_lianxilan2
+{
+	width:970px;
+	height:auto;
+	min-height:250px;
+	margin:auto;
+	padding-top:50px;
+	position:relative;
+}
+.grxx_youbian1
+{
+	width:260px;
+	height:auto;
+	min-height:1000px;
+	margin:0px;
+	border:1px solid #E9E9E9;
+	padding:10px;
+	position:relative;
+	float:right;
+}
+.grxx_zhongjianbufen1
+{
+	width:970px;height:auto;min-height:1100px;margin:50px auto 10px auto; padding:0px; position:relative;overflow:hidden;
+	
+}
+.grxx_zhongjianbufen2
+{
+	width:970px;height:auto;min-height:200px;margin-top:30px;border:0px;padding:0px;position:relative;overflow:hidden;background-image:url(../fixedpicture/wenli.jpg);
+}
+.grxx_zhongjianbufen3
+{
+	width:170px;height:auto;min-height:200px;margin-right:10px;position:relative;float:left;
+}
+.grxx_zhongjianbufen4
+{
+	padding:10px;background:#E8E8FF;
+}
+.grxx_zhongjianbufen5
+{
+	width:150px;height:90px;margin-top:30px;cursor:pointer;
+}
+.grxx_zhongjianbufen6
+{
+	border:2px solid #7F7F7F; background-image:url(../fixedpicture/xiugaitouxiang4.png);background-size:60px 25px;
+}
+.grxx_zhongjianbufen7
+{
+    width:60px;height:25px;opacity:0;filter:alpha(opacity=0);cursor:pointer;
+}
+.grxx_zhongjianbufen8
+{
+	width:40px;height:25px;display:none;
+}
+.grxx_zhongjianbufen9
+{
+	width:750px;height:auto;min-height:150px;margin-top:20px;position:relative;float:right;line-height:40px;
+}
+.grxx_zhongjianbufen10
+{
+	cursor:pointer;color:blue;font-size:13px;text-decoration:underline;
+}
+.grxx_zhongjianbufen11
+{
+	width:200px;height:22px;margin:0px;border:0px;padding:0px;cursor:pointer;background-color:#E8E8FF;display:none;
+}
+.grxx_zhongjianbufen12
+{
+	width:40px;height:25px;display:none;
+}
+.grxx_zhongjianbufen13
+{
+	cursor:pointer;color:blue;font-size:13px;text-decoration:underline;
+}
+.grxx_zhongjianbufen14
+{
+	width:200px;height:19px;display:none;background-color:#E8E8FF;
+}
+.grxx_zhongjianbufen15
+{
+	width:40px;height:25px;display:none;
+}
+.grxx_zhongjianbufen16
+{
+	color:black;font-size:13px;
+}
+.grxx_qiehuantiezi1
+{
+	width:970px;height:auto;min-height:39px;margin-top:0px;border:0px;padding:0px;position:relative;background-color:#5398D9;overflow:hidden;font-size:30px;
+}
+.grxx_zuobianbufen1
+{
+	width:650px;height:auto;min-height:1000px;border:1px solid #E9E9E9;padding:10px;position:relative;float:left;
+}
+.grxx_zutuantiezi1
+{
+	width:150px;height:100px;position:relative;float:left;margin-right:10px;
+}
+.grxx_zutuantiezi2
+{
+	width:480px;height:100px;position:relative;float:right;overflow:hidden;
+}
+.grxx_zutuantiezi3
+{
+    color:blue;font-size:15px;margin-top:10px;
+}
+.grxx_zutuantiezi4
+{
+	color:grey;font-size:15px;margin-top:15px;
+}
+.grxx_luntantiezi1
+{
+	width:100%;height:auto;min-height:80px;margin-top:10px;border-bottom:1px solid #E8E8FF;position:relative;
+}
+.grxx_luntantiezi2
+{
+	width:70px;height:65px;margin-top:15px;margin-right:10px;position:relative;float:left;
+}
+.grxx_luntantiezi3
+{
+	width:450px;height:70px;margin-top:10px;position:relative;float:left;font-size:15px;line-height:35px;
+}
+.grxx_luntantiezi4
+{
+	width:70px;height:70px;margin-top:10px;position:relative;float:right;
+}
+.grxx_luntantiezi5
+{
+	color:grey;font-size:12px;
+}
+.grxx_lejiaoliutiezi1
+{
+	font-size:20px;
+}
+.grxx_lejiaoliutiezi2
+{
+	color:black;font-size:15px;
+}
+.grxx_lejiaoliutiezi3
+{
+	color:grey;font-size:13px;
+}

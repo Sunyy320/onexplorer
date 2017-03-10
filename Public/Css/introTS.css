@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+#third_one {
+    width: 970px;
+    height: 140px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+#third_one .third_one_left {
+    width: 485px;
+    height: 140px;
+    float: left;
+}
+
+#third_one .third_one_left img {
+    margin-left: 30px;
+}
+
+#third_one .third_one_leftsmall {
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    cursor: pointer;
+}
+
+#third_one .third_one_right {
+    width: 485px;
+    height: 140px;
+    float: right;
+    font: 15px;
+    position: relative;
+}
+
+#third_one .third_one_right .tdoneR_text {
+    width: 280px;
+    height: 46px;
+    background: #B0D0F0;
+    border: 1px solid #41719C;
+    -moz-border-radius: 8px;
+    -wedkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+#third_one .third_one_right .tdoneR_submit {
+    width: 63px;
+    height: 35px;
+    background: url(../Images/common/thirdPartSearch.jpg);
+    border: 0;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    cursor: pointer;
+}
+
+#third_two {
+    width: 970px;
+    min-height: 900px;
+    height: auto;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+#third_two .third_two_left {
+    width: 800px;
+    min-height: 900px;
+    height: auto;
+    background: white;
+    border: 1px solid #41719C;
+
+    margin: 0 auto;
+}
+
+#third_two .third_two_left .tdtoL_intro {
+    width: 800px;
+    height: auto;
+    margin-left: 15px;
+    /*margin: 0 50px;*/
+    oveflow: hidden;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_absract {
+    width: 940px;
+    height: auto;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #000000;
+    color: #03F;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_text {
+    width: 760px;
+    height: auto;
+    margin-top: 10px;
+    font-size: 15px;
+    word-wrap: break-word;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_line {
+    width: 720px;
+    height: 3px;
+    background: url(../Images/common/tdtointroLine.jpg) repeat-x;
+    margin-top: 5px;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_title {
+    width: 720px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: green;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_author span {
+    margin-right: 30px;
+    font-size: 15px;
+    color: green;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_picture {
+    width: 650px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#third_two .third_two_left .tdtoL_intro .tdtoL_intro_picture img {
+    width: 650px;
+}
+
+#third_two .third_two_left .tdtoL_intro_zan {
+    width: 96px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 180px;
+    cursor: pointer;
+    /*text-align: center;*/
+    /*overflow: hidden;*/
+    margin: 0 auto;
+}
+
+#third_two .third_two_left .tdtoL_intro_zan img {
+    width: 96px;
+    /*text-align: center;*/
+}
+
+#third_two .third_two_left .tdtoL_statement {
+    width: 720px;
+    height: auto;
+    margin: 20px auto 20px;
+    font-style: italic;
+    font-size: 20px;
+    color: blue;
+}
+
+.tdtoL_intro_text img {
+    width: 650px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#third_two .third_two_right {
+    width: 200px;
+    min-height: 900px;
+    height: auto;
+    background: white;
+    float: right;
+}
+
+#third_two .third_two_right ul {
+    width: 200px;
+    height: auto;
+    background: #F2F2F2;
+}
+
+#third_two .third_two_right ul div {
+    width: 200px;
+    min-height: 30px;
+    height: auto;
+    background: url(../Images/common/thirdLeft.jpg) repeat-x;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+#third_two .third_two_right ul div span {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+#third_two .third_two_right ul div a {
+    margin-top: 5px;
+    margin-right: 15px;
+    color: #ED7D31;
+    float: right;
+}
+
+#third_two .third_two_right ul li {
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#third_two .third_two_right .bedding {
+    width: 200px;
+    height: 50px;
+    background: #F2F2F2;
+}
+
+
+#third_two .third_two_right .lastBedding {
+    width: 200px;
+    height: 60px;
+    background: #F2F2F2;
+}
+
+#third_two .third_two_right img {
+    width: 200px;
+}
+
+#third_tail {
+    width: 970px;
+    height: auto;
+    margin: 10px auto 0;
+    background: white;
+}
+
+#third_tail .third_tail_line {
+    width: 970px;
+    height: 3px;
+    background: url(../Images/common/tdtointroLine.jpg);
+}
+
+#third_tail .tdtail_frind {
+    width: 950px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+
+#third_tail .tdtail_frind a {
+    margin-left: 5px;
+}
+
+#third_tail .tdtail_our {
+    width: 950px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+
+#third_tail .third_tail_dian {
+    width: 970px;
+    height: 50px;
+    background: white;
+}
+
+
+
+
+
+
+
+

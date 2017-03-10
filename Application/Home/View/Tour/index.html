@@ -1,0 +1,72 @@
+<title>组团首页</title>
+<script src="__PUBLIC__/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/zutuanshouye.css"/>
+<script src="__PUBLIC__/Js/zutuanshouye.js"></script>
+
+
+
+
+
+<!-- 中间内容 -->
+<div class="ztsy_zhongjianneirong1">
+<!-- 中间左边 -->
+<div class="ztsy_zhongjianneirong2">
+
+<!-- 搜索切换活动-->
+<form method="" action="">
+<div class="ztsy_shousuoqiehuanhuodong1">
+<span class="zutuanshouye_xiaoshou zutuanshouye_dianjiqiehuanbeijing22">组团活动</span>
+<span class="zutuanshouye_konge"></span>
+<span class="zutuanshouye_konge"></span>
+<input type="text" name="soushuo" placeholder="目的地" class="ztsy_shousuoqiehuanhuodong2"/>
+<button class="zutuanshouye_xiaoshou" class="ztsy_shousuoqiehuanhuodong3">搜索</button>
+</div>
+</form>
+<!-- 搜索切换活动结束 -->
+
+<foreach name='data' item='vo'>
+<div class="zutuanshouye_huodong">
+<div class="ztsy_huodongmokuai1">
+<a href="#"><img height="100px" width="150px" src="__PUBLIC__/Images/User/bianpicture/275346.jpg"/></a>
+</div>
+<div class="ztsy_huodongmokuai2">
+<div class="ztsy_huodongmokuai3"><a href="__APP__/Home/Group/index/tid/<{$vo.tid}>" class="zutuanshouye_biaotilink"><{$vo.title}></a></div>
+<div class="ztsy_huodongmokuai4">
+<span>目的地:</span>
+<span><{$vo.destination}></span>
+<span class="zutuanshouye_konge1"></span>
+<span>出发时间:</span>
+<span><{$vo.starttime}></span>
+<span class="zutuanshouye_konge1"></span>
+<span>结束时间:</span>
+<span><{$vo.endtime}></span>
+</div>
+<div class="ztsy_huodongmokuai5">
+<span>人数:</span>
+<span><{$vo.number}></span>
+<span class="zutuanshouye_konge"></span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="zutuanshouye_konge"></span>
+<a href="#"><img src="__PUBLIC__/Images/User/fixedpicture/gerenxinxi1.png" title="进入回复" width="30px" height="15px"/></a>
+<a href="#" class="zutuanshouye_zuzhangxinxilink" title="组长个人信息"><span><{$vo.uidname}></span></a>
+</div>
+</div>
+</div>
+</foreach>
+</div>
+
+
+<!-- 中间右边 -->
+<div class="ztsy_zhongjianyoubian1">
+<div align="center" class="ztsy_zhongjianyoubian2"><a href="__APP__/Home/Tour/add" class="zutuanshouye_fabulink">活动发布</a></div>
+</div>
+<!-- 中间右边结束 -->
+
+</div>
+<!-- 中间内容结束 -->
+
+<!-- 分页栏 -->
+<div class="pagelist">
+<span><{$show}></span>
+</div>
+

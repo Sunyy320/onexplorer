@@ -1,0 +1,88 @@
+
+<title>帖子内容</title>
+<script src="__PUBLIC__/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/luntanneirong.css"/>
+<script src="__PUBLIC__/Js/luntanneirong.js"></script>
+
+<!--中间部分 -->
+
+<div class="ltnr_zhongjianbufen1">
+<div class="ltnr_zhongjianbufen2">
+<div class="ltnr_zhongjianbufen3">
+<span><a href="__APP__/Home/Topic/index" style="color:blue;">帖子</a>->详情</span>
+</div>
+<div class="ltnr_zhongjianbufen4">
+</div>
+<div class="ltnr_zhongjianbufen5">
+<span><{$topicdata.title}></span>
+</div>
+<div class="ltnr_zhongjianbufen6">
+<div class="ltnr_zhongjianbufen7">
+<div style="margin-bottom:0px;"><span style="color:grey;">帖主</span></div>
+<div align="center" class="ltnr_zhongjianbufen8">
+<a href="#"><img src="__PUBLIC__/Images/User/bianpicture/276282.jpg" style="width:86px;height:80px;"/></a></div>
+<div align="center"><span><a href="#" style="color:blue;text-decoration:none;"><{$topicdata.uidname}></a></span></div>
+<div align="center"><span style="color:grey;"><{$topicdata.posttime|date='Y-m-d H:i:s',###}></span></div>
+
+</div>
+
+<div class="ltnr_zhongjianbufen9">
+<{$topicdata.content}>
+</div>
+</div>
+
+
+<div class="ltnr_taoluntiao1">
+<span>讨论</span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge"></span>
+<span class="luntanneirong_konge2"></span>
+<span class="luntanneirong_konge2"></span>
+<span class="luntanneirong_konge2"></span>
+<span><a href="#huifu" style="color:white;">回复</a></span>
+</div>
+
+<foreach name='commentList' item='vo'>
+<div class="ltnr_tiezihuifu1">
+<div class="ltnr_tiezihuifu2">
+<div align="center" class="ltnr_tiezihuifu3">
+<a href="#"><img src="__PUBLIC__/Images/User/bianpicture/275346.jpg" style="width:86px;height:80px;"/></a></div>
+<div align="center"><span><a href="#" style="color:blue;text-decoration:none;"><{$vo.uid}></a></span></div>
+<div align="center"><span style="color:grey;"><{$vo.time|date='Y-m-d H:i:s',###}></span></div>
+</div>
+<div class="ltnr_tiezihuifu4">
+<{$vo.content}>
+</div>
+</div>
+</foreach>
+
+
+
+<!-- 回复框 -->
+<div class="ltnr_huifu1">
+<span class="luntanneirong_konge2"></span><span>回复<a name="huifu"></a></span>
+</div>
+
+<form method="post" action="__APP__/Home/Comments/add" onsubmit="return checked()"> 
+<div class="ltnr_huifu2">
+<textarea id="huifutext" name='commentcontent' id='commentcontent' class="ltnr_huifu3"></textarea>
+<!-- <textarea id="huifutext1" class="ltnr_huifu4"></textarea>-->
+
+</div>
+<div class="ltnr_huifu5">
+<input type="hidden" name="tid" value="<{$topicdata.tid}>"/>
+<input type="submit" name="submit" value="回复" class="ltnr_huifu6"/>
+</div>
+</form>
+<!-- 回复框结束 -->
+
+</div>
+<div class="ltnr_youbian1">
+</div>
+</div>
+<!-- 中间部分结束 -->

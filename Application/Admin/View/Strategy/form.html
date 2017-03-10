@@ -1,0 +1,222 @@
+<include file="Public/head"/>
+<body class="no-skin">
+<include file="Public/header"/>
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+
+    <include file="Public/sidebar"/>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <include file="Public/breadcrumbs"/>
+
+            <!-- /section:basics/content.breadcrumbs -->
+            <div class="page-content">
+                <include file="Public/set"/>
+
+                <!-- /section:settings.box -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" id="form" method="post" action="<{:U('update')}>">
+
+                            <!-- PAGE CONTENT BEGINS -->
+                            <input type="hidden" name="aid" value="<{$article.artid}>" id="aid"/>
+
+                            <!--文章分类-->
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-1">文章分类 </label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="fenlei"  placeholder="旅游攻略"
+                                           class="col-xs-10 col-sm-5"  disabled="true">
+                                    <span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">文章标题不能为空。</span>
+											</span>
+                                </div>
+                            </div>
+
+                            <div class="space-4"></div>
+
+                            <!--文章标题-->
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-1">文章标题 </label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="title" id="title" placeholder="文章标题"
+                                           class="col-xs-10 col-sm-5" value="<{$article['longtitle']}>">
+                                    <span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">文章标题不能为空。</span>
+											</span>
+                                </div>
+                            </div>
+
+
+                            <!--短标题-->
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-1">
+                                    短(副)标题 </label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="shortitle"  placeholder="短标题"
+                                           class="col-xs-10 col-sm-5" value="<{$article['shortitle']}>">
+                                    <span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">如果设置短标题，将会在IE标题栏显示短标题。</span>
+											</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+                            <!--目的地-->
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-1">
+                                    目的地 </label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="place"  id="place" placeholder="目的地"
+                                           class="col-xs-10 col-sm-5" value="<{$article['place']}>">
+                                    <span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">景点名称</span>
+											</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+
+
+
+
+                            <!--文章摘要和简介-->
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-3">文章摘要 </label>
+                                <div class="col-sm-9">
+                                        <textarea name="description" id="description" placeholder="文章摘要"
+                                                  class="col-xs-10 col-sm-5"
+                                                  rows="5"><{$article['shortcontent']}></textarea>
+                                    <span class="help-inline col-xs-12 col-sm-7">
+												<span class="middle">文章摘要、描述。</span>
+											</span>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label no-padding-right" for="form-field-2">文章内容 </label>
+                                <div class="col-sm-9">
+                                        <script id="editor" type="text/plain"  name="content">
+                                             <{$article.content}>
+                                        </script>
+                                </div>
+                            </div>
+                            <div class="space-4"></div>
+
+
+                            <div class="col-md-offset-2 col-md-9">
+                                <button class="btn btn-info submit" type="button">
+                                    <i class="icon-ok bigger-110"></i>
+                                    提交
+                                </button>
+
+                                &nbsp; &nbsp; &nbsp;
+                                <button class="btn" type="reset">
+                                    <i class="icon-undo bigger-110"></i>
+                                    重置
+                                </button>
+                            </div>
+
+                            <!-- PAGE CONTENT ENDS -->
+
+
+                        </form>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+    <include file="Public/footer"/>
+
+</div><!-- /.main-container -->
+
+<include file="Public/footerjs"/>
+<!-- inline scripts related to this page -->
+
+<script type="text/javascript" charset="utf-8">
+    window.UEDITOR_HOME_URL = "__ROOT__/Public/Ueditor/";
+    $(document).ready(function () {
+        //UE.getEditor('editor');
+        var editor;
+        var options = {
+            initialFrameWidth:795,        //初化宽度
+            initialFrameHeight:600,        //初化高度
+            focus:false,                 //初始化时，是否让编辑器获得焦点true或false
+            maximumWords:1000,            //允许的最大字符数
+            toolbars:[
+                [ 'source', 'undo', 'redo', 'bold', 'italic', 'underline', 'fontsize', 'fontfamily', 'justifyleft', 'justifyright', 'justifycenter', 'justifyjustify', 'removeformat', 'formatmatch', 'autotypeset', 'pasteplain', '|', 'insertorderedlist', 'insertunorderedlist', 'cleardoc', 'link', 'unlink','insertimage','paragraph','addparagraph']
+            ],
+            enableAutoSave: false,
+            wordCount:false,         //是否开启字数统计
+            enableContextMenu: false,   //是否开启右击快捷方式
+            paragraph:{'p':'','h2':''},//标题设置
+            scaleEnabled:true,//文本框是否可以自动增长，设置为true，不可以，形成滚动条
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("editor");
+
+        $(".submit").click(function () {
+            var title = $("#title").val();
+            var content = $("#content").val();
+            var place=$("#place").val();
+
+            if (title == '') {
+                bootbox.dialog({
+                    title: '友情提示：',
+                    message: "文章标题必须填写。",
+                    buttons: {
+                        "success": {
+                            "label": "确定",
+                            "className": "btn-danger"
+                        }
+                    }
+                });
+                return;
+            }
+            if (content == '') {
+                bootbox.dialog({
+                    title: '友情提示：',
+                    message: "文章内容需要填写。",
+                    buttons: {
+                        "success": {
+                            "label": "确定",
+                            "className": "btn-danger"
+                        }
+                    }
+                });
+                return;
+            }
+            if (place == '') {
+                bootbox.dialog({
+                    title: '友情提示：',
+                    message: "目的地需要填写。",
+                    buttons: {
+                        "success": {
+                            "label": "确定",
+                            "className": "btn-danger"
+                        }
+                    }
+                });
+                return;
+            }
+
+
+            $("#form").submit();
+        });
+    });
+
+</script>
+<load href="__PUBLIC__/Ueditor/ueditor.config.js"/>
+<load href="__PUBLIC__/Ueditor/ueditor.all.min.js"/>
+</body>
+</html>

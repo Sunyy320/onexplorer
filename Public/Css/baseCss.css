@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a img {
+    border: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    min-width: 970px;
+    width: 100%;
+    height: 100%;
+    font-family: 宋体, tahoma, arial;
+}
+
+#firstPart {
+    width: 970px;
+    height: auto;
+    background: white;
+    margin: 5px auto 0;
+}
+.pointer{
+    cursor: pointer;
+}
+.fst_head {
+    width: 970px;
+    min-height: 15px;
+    height: auto;
+    font-size: 15px;
+    color: #4472C4;
+    overflow: hidden;
+}
+
+.fst_head .fst_head_one {
+    float: left;
+}
+
+.fst_head .fst_head_two {
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fst_logo_search {
+    width: 970px;
+    height: auto;
+    margin-top: 0px;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fst_logo_search .fst_logo {
+    width: 310px;
+    height: 100px;
+    background: #5B9BD5;
+    margin-top: 0px;
+    margin-left: 10px;
+    -moz-border-radius: 14px;
+    -wedkit-border-radius: 14px;
+    border-radius: 14px;
+    float: left;
+}
+
+.fst_logo_search .fst_search_text {
+    width: 430px;
+    height: 40px;
+    border: 1px solid #FFC000;
+    margin-top: 40px;
+    margin-right: 85px;
+    float: right;
+    -moz-border-radius: 8px;
+    -wedkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.fst_logo_search .fst_search_submit {
+    width: 70px;
+    height: 36px;
+    background: url(../Images/common/firstSearch.jpg);
+    border: 0;
+    position: absolute;
+    top: 43px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.fst_logo_search .fst_search img {
+    width: 70px;
+    height: 36px;
+}
+
+#secondPart {
+    width: 100%;
+    height: 54px;
+    background: url(../Images/common/menuColor.jpg) repeat-x;
+    margin-top: 10px;
+    -moz-border-radius: 10px;
+    -wedkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#secondPart ul {
+    width: 970px;
+    height: auto;
+    margin: 0 auto 0;
+}
+
+#secondPart ul li {
+    hegint: auto;
+    margin-left: 80px;
+    float: left;
+    cursor: pointer;
+}
+
+#secondPart ul li img {
+    height: 54px;
+}
+
+#thirdPart {
+    width: 100%;
+    height: auto;
+    margin-up: 12px;
+    position: relative;
+}
+
+#thirdPart .line {
+    width: 100%;
+    height: 2px;
+    background: #4472C4;
+}
+
+#thirdPart .back_hai {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.footer{
+    width: 1200px;
+    height: auto;
+    margin-top: 50px;
+
+    /*border: 1px solid silver;*/
+    /*bottom: 0;*/
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+
+
+
+
+
+
+
+
+
+
+
+

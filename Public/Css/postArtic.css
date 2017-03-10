@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+#PA_thirdPart {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#PA_thirdPart .PA_line {
+    width: 100%;
+    height: 2px;
+    background: #4472C4;
+}
+
+#PA_thirdPart .PA_back_hai {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#PA_third_one {
+    width: 970px;
+    height: 140px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+#PA_third_one .PA_third_one_left {
+    width: 485px;
+    height: 140px;
+    float: left;
+}
+
+#PA_third_one .PA_third_one_left img {
+    margin-left: 30px;
+}
+
+#PA_third_one .PA_third_one_leftsmall {
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    cursor: pointer;
+}
+
+#PA_third_one .PA_third_one_right {
+    width: 485px;
+    height: 140px;
+    float: right;
+    font-size: 15px;
+    position: relative;
+}
+
+#PA_third_one .PA_third_one_right .PA_tdoneR_text {
+    width: 280px;
+    height: 46px;
+    background: #B0D0F0;
+    border: 1px solid #41719C;
+    -moz-border-radius: 8px;
+    -wedkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+#PA_third_one .PA_third_one_right .PA_tdoneR_submit {
+    width: 63px;
+    height: 35px;
+    background: url(../Images/common/thirdPartSearch.jpg);
+    border: 0;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------*/
+#PA_pageArtiv_all {
+    width: 970px;
+    height: auto;
+    margin: 20px auto 0px;
+    background: white;
+    overflow: hidden;
+}
+
+#PA_pageArtiv_all .PA_pgat_zhuti {
+    width: 970px;
+    min-height: 50px;
+    margin-top: 20px;
+}
+
+#PA_pageArtiv_all .PA_pgat_zhuti div {
+    width: 67px;
+    height: 27px;
+    margin-left: 10px;
+    margin-top: 25px;
+    float: left;
+}
+
+#PA_pageArtiv_all .PA_pgat_zhuti input {
+    width: 800px;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid #41719C;
+    margin-right: 80px;
+    float: right;
+}
+
+#PA_pageArtiv_all .PA_pgat_place {
+    width: 970px;
+    min-height: 50px;
+}
+
+#PA_pageArtiv_all .PA_pgat_place div {
+    width: 67px;
+    height: 27px;
+    margin-left: 10px;
+    margin-top: 25px;
+    float: left;
+}
+
+#PA_pageArtiv_all .PA_pgat_place input {
+    width: 800px;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid #41719C;
+    margin-right: 80px;
+    float: right;
+}
+
+#PA_pageArtiv_all .PA_pgat_line {
+    width: 870px;
+    height: 5px;
+    background: url(../Images/common/tdtointroLine.jpg) repeat-x;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#PA_pageArtiv_all .PA_pgat_artic {
+    width: 970px;
+    min-height: 50px;
+}
+
+#PA_pageArtiv_all .PA_pgat_artic div {
+    width: 67px;
+    height: 27px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.container{
+    width: 970px;
+    margin-left: 90px;
+    height: auto;
+}
+
+#PA_pageArtiv_all .PA_pgat_post {
+    width: 970px;
+    height: auto;
+    margin-top: 0px;
+}
+
+#PA_pageArtiv_all .PA_pgat_post img {
+    width: 70px;
+    height: 27px;
+    border: 0;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 1200px;
+    height: auto;
+    margin-top: 150px;
+    bottom: 0;
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+

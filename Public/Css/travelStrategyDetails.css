@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+#TSD_article {
+    width: 970px;
+    min-height: 1100px;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+    background: white;
+}
+
+#TSD_article .TSD_articleLeft {
+    width: 750px;
+    min-height: 1100px;
+    height: auto;
+    background: white;
+    float: left;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleLeft ul {
+    width: 720px;
+    min-height: 1100px;
+    height: auto;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleNameAll {
+    width: 720px;
+    min-height: 100px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleNameAll .TSD_articleName {
+    width: 600px;
+    min-height: 30px;
+    height: auto;
+    margin: 20px auto 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleNameAll .TSD_articleAuthor {
+    width: 600px;
+    height: auto;
+    font-size: 15px;
+    margin: 10px auto 5px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleNameAll .TSD_articleNamePicture {
+    width: 720px;
+    height: 18px;
+    background: url(../Images/common/huabian.jpg) repeat-x;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleTitle {
+    width: 720px;
+    min-height: 50px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleTitle .TSD_articleTitleName {
+    width: 720px;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleTitle .TSD_articleTitleLine {
+    width: 720px;
+    height: 5px;
+    background: #0C9;
+    -moz-border-radius: 2px;
+    -wedkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleContent {
+    width: 720px;
+    height: auto;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleContent p {
+    width: 720px;
+    height: auto;
+    overflow: hidden;
+    line-height: 25px;
+    font-size: 15px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleContent img{
+    width: 650px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articlePicture {
+    width: 650px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articlePicture img {
+    width: 650px;
+    margin-bottom: 15px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleEnd {
+    width: 70px;
+    height: 22px;
+    background: #CF3;
+    -moz-border-radius: 10px;
+    -wedkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#TSD_article .TSD_articleLeft ul .TSD_articleEnd div {
+    margin-left: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#TSD_article .TSD_articleRight {
+    width: 200px;
+    min-height: 1000px;
+    height: auto;
+    float: right;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne {
+    width: 200px;
+    min-height: 70px;
+    height: auto;
+    background: white;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOnePicture {
+    width: 100px;
+    min-height: 70px;
+    height: auto;
+    float: left;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOnePicture img {
+    width: 100px;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOneDing {
+    width: 100px;
+    height: 70px;
+    background: white;
+    float: right;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOneDing .TSD_rightOneUp {
+    whith: 100px;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    color: #CBD52A;
+    font-size: 15px;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOneDing .TSD_rightOneDown {
+    width: 41px;
+    height: 37px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#TSD_article .TSD_articleRight .TSD_rightOne .TSD_rightOneDing .TSD_rightOneDown img {
+    width: 41px;
+    height: 37px;
+}
+
+#TSD_article .TSD_articleRight #TSD_rightTwo {
+    width: 200px;
+    min-height: 300px;
+    height: auto;
+    background: white;
+    overflow: hidden;
+}
+
+#TSD_article .TSD_articleRight #TSD_rightTwo .TSD_rightTowMuneName {
+    width: 200px;
+    height: auto;
+    font-size: 15px;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #6695CF;
+}
+
+#ademo {
+    width: 200px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    background: white;
+}
+
+.abox {
+    height: auto;
+    width: 180px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.zUIpanelScrollBox, .zUIpanelScrollBar {
+    width: 10px;
+    top: 4px;
+    right: 2px;
+    border-radius: 5px;
+    moz-border-radius: 5px;
+    -wedkit-border-radius: 5px;
+
+}
+
+.zUIpanelScrollBox {
+    background: black;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.zUIpanelScrollBar {
+    background: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#TSD_tail {
+    width: 970px;
+    height: 120px;
+    margin: 0px auto 0px;
+}
+
+#TSD_thirdPart {
+    width: 100%;
+    height: auto;
+    min-height: 1300px;
+    margin-top: 12px;
+    position: relative;
+    background: url(../Images/common/easyBackground.png) repeat;
+    overflow: hidden;
+}
+
+#TSD_thirdPart .TSD_line {
+    width: 100%;
+    height: 2px;
+    background: #4472C4;
+}
+
+
+
+

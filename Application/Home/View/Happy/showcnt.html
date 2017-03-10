@@ -1,0 +1,66 @@
+<title>Onexplorer探索者乐交流文章详细</title>
+<load file="__PUBLIC__/Css/introTS.css"/>
+<load file="__PUBLIC__/Js/move.js"/>
+
+
+<div id="thirdPart">
+    <div class="line"></div>
+    <img class="back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+    <div class="line"></div>
+    <img class="back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+    <div id="third_one">
+        <div class="third_one_left"><img src="__PUBLIC__/Images/common/logoLe.png"></div>
+        <div class="third_one_leftsmall"><a><img src="__PUBLIC__/Images/common/leLogoSmall.png"></a></div>
+        <div class="third_one_right">
+            <input class="tdoneR_text" type="text" placeholder="请输入目的地搜索相应文章">
+            <input class="tdoneR_submit" type="submit" value="">
+        </div>
+    </div>
+
+
+
+    <div id="third_two">
+        <div class="third_two_left">
+            <div class="tdtoL_intro">
+
+                <div class="tdtoL_intro_title"><{$arr.title}></div>
+
+                <div class="tdtoL_intro_author">
+                    <span>作者：<{$arr.username}></span>
+                    <span>目的地：<{$arr.address}></span>
+                    <span id="dzcount">点赞数：<{$arr.supportsum}></span>
+                    <span><{$arr.titletime}></span>
+                </div>
+
+
+                <div class="tdtoL_intro_text">
+                   <{$arr.content}>
+                </div>
+
+
+            </div>
+
+            <div class="tdtoL_intro_zan"><img src="__PUBLIC__/Images/common/zanqian.png" id="dianzan"></div>
+            <div class="tdtoL_statement">-----注：资源来自乐交流模块、百度百科及网络-----</div>
+        </div>
+
+     </div>
+
+</div>
+<script type="text/javascript">
+    $(function(){
+        //点赞，更新数据，点赞数+1，ajax实现
+       $("#dianzan").click(function(){
+           $.ajax({
+               type:"POST",
+               data:"id=<{$arr.id}>",
+               url:"__APP__/Home/happy/dianzan",
+               success:function(msg){
+                   var num=<{$arr.supportsum}>+1;
+                   $("#dzcount").html("点赞数:"+num);
+                   alert(msg);
+               }
+           });
+       });
+    });
+</script>

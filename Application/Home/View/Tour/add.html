@@ -1,0 +1,68 @@
+
+<title>组团发帖</title>
+<script src="__PUBLIC__/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/zutuanfatie.css"/>
+<script src="__PUBLIC__/Js/zutuanfatie.js"></script>
+
+
+<!--中间内容-->
+<div class="ztft_zhongjianneirong1"> 
+<div class="ztft_zhongjianneirong2">
+<div class="ztft_zhongjianneirong3">
+脚步  一步两步  我们的脚步
+</div>
+<!-- 发帖内容 -->
+<form method="post" action="__APP__/Home/Tour/publish" onsubmit="return checked()">
+<div class="ztft_fatieneirong1">
+<span style="color:red;">*</span><span>活动标题</span> 
+<input type="text" name="title" id="title" class="ztft_huodongbiaoti1"/>
+
+<span style="color:red">4-15字</span>
+</div>
+
+<div class="ztft_fatieneirong2">
+<span style="color:red;">*</span><span>出发地点</span> 
+<input type="text" name="start" id="start" class="ztft_chufadidian1"/>
+
+</div>
+
+<div class="ztft_fatieneirong3">
+<span style="color:red;">*</span><span>目的地</span>
+<input type="text" name="destination" id="destination" class="ztft_mudidi1"/>
+
+
+</div>
+
+<div class="ztft_fatieneirong4">
+<span style="color:red;">*</span><span>行程周期</span> 
+<input type="text" name="starttime" id="starttime" class="ztft_chufariqi1" onblur="myFunction1(this)"/> 
+至 
+<input type="text" name="endtime" id="endtime" class="ztft_jieshuriqi1" onblur="myFunction1(this)"/>
+<span style="color:red">格式:2016.01.01</span>
+</div>
+
+<div class="ztft_fatieneirong6">
+<span style="color:red;">*</span><span>人数</span>
+<input type="text" name="number" id="number" class="ztft_renshu1" onblur="myFunction3(this)"/>
+<span style="color:red">请填数字</span>
+</div>
+
+<div class="ztft_fatieneirong9">
+<span style="color:red;">*</span><span>活动内容</span>
+<div></div>
+<textarea placeholder="活动说明" name="content" id="content" class="ztft_huodongneirong1"></textarea>
+</div>
+
+
+<div class="ztft_fabu1">
+<input type="submit" name="submit" value="发布" style="width:590px;height:50px;"/> 
+</div>
+</form>
+
+<!-- 发帖内容结束 -->
+<div align="center" class="tianwanquebao">
+请确保以上的内容已填完
+</div>
+</div>
+</div>
+<!-- 中间内容结束 -->

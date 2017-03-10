@@ -1,0 +1,241 @@
+body
+{
+margin:0px;
+border:0px;
+padding:0px;
+background-image:url(Images/User/fixedpicture/wenli.jpg);
+
+}
+.luntanneirong_konge
+{
+  margin-right:70px;
+}
+.luntanneirong_konge1
+{
+  margin-right:30px;
+}
+.luntanneirong_konge2
+{
+  margin-right:15px;
+}
+.luntanneirong_onmouse:hover
+{
+	background-color:#E8E8FF;
+}
+.luntanneirong_link:link
+{
+   	color:red;
+	text-decoration:none;
+}
+.luntanneirong_link:visited
+{
+   	color:#5B9BD5;
+	text-decoration:none;
+}
+.luntanneirong_link:hover
+{
+   	color:blue;
+	text-decoration:none;
+}
+.luntanneirong_navlink:link
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanneirong_navlink:visited
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanneirong_navlink:hover
+{
+	color:black;
+	text-decoration:none;
+}
+.luntanneirong_currentnavlink
+{
+	color:black;
+	text-decoration:none;
+}
+.ltnr_lianxilan1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:300px;
+	position:relative;
+	background-color:#BFBFBF;
+}
+.ltnr_lianxilan2
+{
+	width:970px;
+	height:auto;
+	min-height:250px;
+	margin:auto;
+	padding-top:50px;
+	position:relative;
+}
+.ltnr_youbian1
+{
+	width:260px;
+	height:auto;
+	min-height:1000px;
+	margin:0px;
+	border:1px solid #E9E9E9;
+	padding:10px;
+	position:relative;
+	float:right;
+}
+.ltnr_huifu1
+{
+	width:100%;
+	height:auto;
+	min-height:30px;
+	position:relative;
+	background-color:#FAFAFA;
+	font-size:20px;
+}
+.ltnr_huifu2
+{
+	width:100%;
+	height:auto;
+	min-height:200px;
+	border:3px solid #5B9BD5;
+	margin-top:20px;
+	position:relative;
+}
+.ltnr_huifu3
+{
+	width:99%;
+	height:200px; 
+	border:0px;
+	color:grey;
+}
+.ltnr_huifu4
+{
+	width:99%;
+	height:200px;
+	border:0px;
+	color:grey;
+	display:none;
+}
+.ltnr_huifu5
+{
+	width:100%;
+	height:50px;
+	margin-top:5px;
+	position:relative;
+}
+.ltnr_huifu6
+{
+	width:200px;
+	height:40px;
+	background-color:#5B9BD5;
+	color:white;
+	font-size:20px;
+}
+.ltnr_dengluzhuce1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:30px;
+	position:relative;
+	background-color:#F0F0F0;
+}
+.ltnr_dengluzhuce2
+{
+	width:970px;
+	height:auto;
+	min-height:30px;
+	margin:auto;
+	position:relative;
+	font-size:20px;
+	color:#3A9D9A;
+}
+.ltnr_daohangtiao1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:50px;
+	position:relative;
+	background-color:#5B9BD5;
+	
+}
+.ltnr_daohangtiao2
+{
+	width:970px;
+	height:auto;
+	min-height:50px;
+	margin:auto;
+	position:relative;
+	font-size:33px;
+	color:white;
+	vertical-align:middle;
+}
+.ltnr_zhongjianbufen1
+{
+	width:970px;height:auto;min-height:2000px;margin:50px auto 10px auto; padding:0px; position:relative;overflow:hidden;background-color:white;
+}
+.ltnr_zhongjianbufen2
+{
+	width:650px;
+	height:auto;min-height:1000px;border:1px solid #E9E9E9;padding:10px;position:relative;float:left;
+}
+.ltnr_zhongjianbufen3
+{
+	width:100%;height:auto;min-height:25px;position:relative;background-color:#EDEEF2;color:blue;font-size:15px;
+}
+.ltnr_zhongjianbufen4
+{
+	width:100%;height:auto;min-height:35px;position:relative;background-color:#FAFAFA;
+}
+.ltnr_zhongjianbufen5
+{
+	width:100%;height:auto;min-height:35px;margin-top:5px;border-bottom:2px solid #E8E8FF; position:relative;font-size:20px;
+}
+.ltnr_zhongjianbufen6
+{
+	width:100%; height:auto; min-height:290px;border-bottom:2px solid #E8E8FF;position:relative;overflow:hidden;
+}
+.ltnr_zhongjianbufen7
+{
+	width:110px;height:auto;min-height:140px;margin-right:15px;position:relative;float:left;font-size:13px;color:blue;
+}
+.ltnr_zhongjianbufen8
+{
+	width:87px;height:82px;padding:4px;background:#E8E8FF;position:relative;
+}
+.ltnr_zhongjianbufen9
+{
+	width:480px;height:auto;min-height:250px;padding:20px;position:relative;float:right;background-color:#FAFAFA;word-spacing:break-word;font-size:14px;line-height:35px;overflow:hidden;
+}
+.ltnr_taoluntiao1
+{
+	width:100%;
+	height:auto;
+	min-height:35px;
+	margin-top:5px;
+	border-bottom:2px solid #E8E8FF;
+	position:relative;
+	font-size:22px;
+	background:#5B9BD5;
+	color:white;
+}
+.ltnr_tiezihuifu1
+{
+	width:100%; height:auto; min-height:290px;margin-top:10px;border-bottom:2px solid #E8E8FF;position:relative;overflow:hidden;
+}
+.ltnr_tiezihuifu2
+{
+	width:110px;height:auto;min-height:140px;margin-right:15px;position:relative;float:left;font-size:13px;color:blue;
+}
+.ltnr_tiezihuifu3
+{
+	width:87px;height:82px;padding:4px;background:#E8E8FF;position:relative;
+}
+.ltnr_tiezihuifu4
+{
+	width:480px;height:auto;min-height:250px;padding:20px;position:relative;float:right;background-color:#FAFAFA;word-spacing:break-word;font-size:14px;line-height:35px;overflow:hidden;
+}

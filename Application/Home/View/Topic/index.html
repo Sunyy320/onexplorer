@@ -1,0 +1,119 @@
+<title>论坛首页</title>
+
+
+<script src="__PUBLIC__/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/luntanshouye.css"/>
+<script src="__PUBLIC__/Js/luntanshouye.js"></script>
+<!--中间部分-->
+<div class="ltsy_zhongjianbufen1">
+<div class="ltsy_zhongjianbufen2">
+<div align="center" class="ltsy_zhongjianbufen3">
+<span>热门活动</span>
+</div>
+
+<div class="ltsy_zhongjianbufen4">
+<div class="ltsy_zhongjianbufen5">
+<a href="#"><img id="luntanshouye_tupianqiehuan" src="__PUBLIC__/Images/User/bianpicture/275346.jpg" style="width:100%;height:100%;"/></a>
+</div>
+<div class="ltsy_zhongjianbufen6">
+<span style="color:blue;">></span>
+<span><a href="#" class="luntanshouye_remenhuodonglink">武功山春游</a></span>
+<div></div>
+<span style="color:blue;">></span>
+<span><a href="#" class="luntanshouye_remenhuodonglink">云中漫步</a></span>
+<div></div>
+<span style="color:blue;">></span>
+<span><a href="#" class="luntanshouye_remenhuodonglink">侠士的沙行</a></span>
+
+<div></div>
+<span style="color:blue;">></span>
+<span><a href="#" class="luntanshouye_remenhuodonglink">滚动的波涛</a></span>
+<div></div>
+<span style="color:blue;">></span>
+<span><a href="#" class="luntanshouye_remenhuodonglink">滚动的波涛</a></span>
+</div>
+</div>
+
+<div class="ltsy_tiezi1">
+<span class="luntanshouye_konge2"></span><span>帖子</span>
+</div>
+
+<foreach name='data' item='vo'>
+<div class="luntanshouye_onmouse ltsy_tiezimokuai1">
+<div class="ltsy_tiezimokuai2">
+<div style="margin-bottom:8px;"><img src="__PUBLIC__/Images/User/fixedpicture/ltxiaoxitubiao1.png" style="width:50px;height:25px;"/></div>
+<span style="color:grey;font-size:12px;"><{$vo.posttime|date='Y-m-d H:i:s',###}></span>
+</div>
+<div class="ltsy_tiezimokuai3">
+<span style="color:blue;"><a href="__APP__/Home/Post/index/tid/<{$vo.tid}>" class="luntanshouye_biaotilink"><{$vo.title}></a></span>
+<div></div>
+<span style="color:grey;font-size:12px;"></span>
+</div>
+<div class="ltsy_tiezimokuai4">
+<span style="color:grey;font-size:12px;"><a href="#" class="luntanshouye_tiezhuxinxi" title="小帖主信息"><{$vo.uidname}></a></span>
+<div style="margin-top:20px;"></div>
+<span><a href="#" title="回复"><img src="__PUBLIC__/Images/User/fixedpicture/gerenxinxi1.png" style="width:32px;height:20px;"/></a></span>
+</div>
+</div>
+</foreach>
+
+<div class='pagelist'>
+<{$show}>
+</div>
+
+
+<!-- 分页钮 -->
+<!-- <div class="ltsy_fenyeniu1">
+<button class="ltsy_fenyeniu2">下一页</button> 
+</div>-->
+<!-- 分页钮结束 -->
+
+<div class="ltsy_fatietiao1">
+<span class="luntanshouye_konge2"></span><span><a name="fatie"></a>发帖</span>
+</div>
+
+<form method="post" action="__APP__/Home/Topic/newpost" onsubmit="return checked()" id='topicform' >
+ 
+<div class="ltsy_fatie1">
+<span class="luntanshouye_konge2"></span>
+<span>标题</span>
+<input type="text" name="title" id="title" class="ltsy_fatie2"/>
+<!--  <input type="text" name="biaoti1" id="bioati1" class="ltsy_fatie3"/>-->
+</div>
+	
+<div class="ltsy_fatie4">
+<textarea name='content' id="content" class="ltsy_fatie5"></textarea>
+<!-- <textarea id="fatie1" class="ltsy_fatie6"></textarea>-->
+</div>
+
+
+<div class="ltsy_fatie7">
+<input type="button" onclick='submitForm()' value="发帖" class="ltsy_fatie8"/>
+</div>
+</form>
+
+</div>
+<div class="ltsy_youbian1">
+<a href="#fatie" class="luntanshouye_fatielink">
+<div align="center" class="ltsy_youbian2">
+<span>发布帖子</span>
+</div>
+</a>
+
+</div>
+</div>
+<!-- 中间部分结束 -->
+
+
+<script>
+	
+function submitForm()
+{
+
+	document.getElementById('topicform').submit();
+}
+
+</script>
+
+
+

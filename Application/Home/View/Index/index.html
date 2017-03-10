@@ -1,0 +1,145 @@
+<load file="__PUBLIC__/Css/homePage.css"/>
+
+
+<script type="text/javascript">
+    var t = n =0, count;
+    $(document).ready(function(){
+        count=$("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+        $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+        $("#banner li").click(function() {
+
+            var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
+            n = i;
+            if (i >= count) return;
+            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+            $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
+            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+            document.getElementById("banner").style.background="";
+            $(this).toggleClass("on");
+            $(this).siblings().removeAttr("class");
+        });
+        t = setInterval("showAuto()", 4000);
+        $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+    })
+
+    function showAuto()
+    {
+        n = n >=(count -1) ?0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+
+    }
+</script>
+
+
+<div id="HP_thirdPart">
+    <div class="HP_line"></div>
+    <!--图片轮播---------->
+    <div id="banner">
+        <div id="banner_bg"></div>
+        <!--标题背景-->
+        <div id="banner_info"></div>
+        <!--标题-->
+        <ul>
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+        <!--轮播图片开始-->
+        <div id="banner_list">
+            <volist name="pic" id="val">
+                <a href="<{$val.url}>" target="_blank">
+                    <img src="<{$val.pic}>" title="<{$val.title}>"  alt="<{$val.title}>"/>
+                </a>
+            </volist>
+        </div>
+        <!--轮播图片结束-->
+    </div>
+    <!---------------------->
+
+
+
+    <div id="HP_homePageAll">
+
+        <!--旅游攻略开始-->
+        <div class="HP_recommendName">攻略赏析</div>
+        <div class="HP_homeRecommend">
+                <volist name="strategy" id="val">
+                    <div class="HP_recommendContent">
+                        <img src="<{$val.imgsrc}>">
+                        <a href="<{:U('Strategy/showct')}>?id=<{$val.id}>&name=<{$val.username}>">
+                            <div class="HP_recommendTitle"><{$val.longtitle}></div>
+                            <div class="HP_recommendIntro"><{$val.shortcontent}>......</div>
+                        </a>
+                    </div>
+                </volist>
+        </div>
+        <!--旅游攻略结束-->
+
+
+
+
+
+        <!--热门话题开始-->
+        <div class="HP_recommendName">热门话题</div>
+        <div class="HP_reomendTopic">
+            <img src="__PUBLIC__/Images/common/homeTopicPicture.jpg">
+            <div class="HP_topicUl">
+                <ul>
+                    <div class="HP_topicUlName">热门论坛</div>
+                    <volist name="topic" id="val">
+                        <li><a href="<{:U('Post/index')}>?tid=<{$val.tid}>">
+                            <span >.</span>&nbsp;<{$val.title}></a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+
+
+            <div class="HP_topicUl">
+                <ul>
+                    <div class="HP_topicUlName">一起团游</div>
+                    <volist name="tour" id="val">
+                        <li><a href="<{:U('Group/index')}>?tid=<{$val.tid}>">
+                            <span >.</span>&nbsp;<{$val.title}></a>
+                        </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+        <!--热门话题结束-->
+
+
+
+
+
+        <!--乐交流开始-->
+        <div class="HP_recommendName">乐乐交流</div>
+        <div class="HP_recommendExchange">
+            <volist name="happy" id="val">
+               <div class="HP_exchangeContent">
+                <img src="<{$val.imgsrc}>">
+                <div class="HP_excahngeName">
+                    <a href=""><{$val.title}></a>
+                </div>
+                <div class="HP_exchangeDing">
+                    <div class="HP_exchangeDingLeft">顶</div>
+                    <div class="HP_exchangeDingRight"><{$val.supportsum}></div>
+                </div>
+                <div class="HP_exchangeAuthor">By&nbsp;<{$val.username}></div>
+              </div>
+            </volist>
+
+        </div>
+        <div class="HP_homePageAllTail"></div>
+        <!--乐交流结束-->
+
+
+    </div>
+
+
+    <div id="TS_tail"></div>
+</div>

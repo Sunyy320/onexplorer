@@ -1,0 +1,187 @@
+$(document).ready(
+function(){
+$(".zutuanshouye_dianjiqiehuanbeijing1").css("background-color","yellow");
+$(".zutuanshouye_dianjiqiehuanbeijing1").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing1").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing2").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing3").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing2").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing2").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing1").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing3").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing3").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing3").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing2").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing1").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","yellow");
+$(".zutuanshouye_dianjiqiehuanbeijing4").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing5").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing6").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing7").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing8").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing9").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing9").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing5").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing6").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing7").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing8").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing4").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","yellow");
+$(".zutuanshouye_dianjiqiehuanbeijing10").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing11").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing12").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing13").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing14").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing15").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing16").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing16").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing11").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing12").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing13").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing14").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing15").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing10").css("background-color","#F0F0F0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","yellow");
+$(".zutuanshouye_dianjiqiehuanbeijing17").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing18").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing19").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing20").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing21").css("background-color","#F0F0F0");
+
+});	
+$(".zutuanshouye_dianjiqiehuanbeijing18").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing18").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing19").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing20").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing21").css("background-color","#F0F0F0");
+
+});
+$(".zutuanshouye_dianjiqiehuanbeijing19").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing19").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing18").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing20").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing21").css("background-color","#F0F0F0");
+
+});
+$(".zutuanshouye_dianjiqiehuanbeijing20").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing20").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing18").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing19").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing21").css("background-color","#F0F0F0");
+
+});
+$(".zutuanshouye_dianjiqiehuanbeijing21").click(function(){
+	$(".zutuanshouye_dianjiqiehuanbeijing21").css("background-color","yellow");
+	$(".zutuanshouye_dianjiqiehuanbeijing18").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing19").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing20").css("background-color","#F0F0F0");
+	$(".zutuanshouye_dianjiqiehuanbeijing17").css("background-color","#F0F0F0");
+
+});
+
+$(".zutuanshouye_dianjiqiehuanbeijing23").css("background-color","#349D9B").css("color","white");
+$(".zutuanshouye_dianjiqiehuanbeijing22").css("background-color","white").css("color","#0C5FA0");
+$(".zutuanshouye_dianjiqiehuanbeijing23").click(function(){
+    $(".zutuanshouye_dianjiqiehuanbeijing23").css("background-color","#349D9B").css("color","white");
+	$(".zutuanshouye_dianjiqiehuanbeijing22").css("background-color","white").css("color","#0C5FA0");
+});
+$(".zutuanshouye_dianjiqiehuanbeijing22").click(function(){
+    $(".zutuanshouye_dianjiqiehuanbeijing22").css("background-color","#349D9B").css("color","white");
+	$(".zutuanshouye_dianjiqiehuanbeijing23").css("background-color","white").css("color","#0C5FA0");
+});
+
+
+
+});

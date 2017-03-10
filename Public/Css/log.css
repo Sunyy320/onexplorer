@@ -1,0 +1,109 @@
+body{
+   margin:0px;
+   border:0px;
+   padding:0px; 
+   font-size:20px;
+}
+#log_first{
+	overflow:hidden;
+	height:auto;
+	min-height:50px;
+	width:970px;
+	margin:auto;
+	position:relative;
+}
+#log_center{
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	min-height:600px;
+	min-width:970px;
+	position:relative;
+	background-color:#5398D9;
+}
+#log_center_back{
+	overflow:hidden;
+	width:970px;
+	height:auto;
+	min-height:600px;
+	margin:auto;
+	position:relative;
+}
+#denglukuang{
+	overflow:hidden;
+	width:350px;
+	height:360px;
+	background-color:#F2E9FD;
+	position:relative;
+	float:right;
+	margin-top:120px;
+}
+#denglukuang2{
+	overflow:hidden;
+	width:350px;
+	height:400px;
+	background-color:#F2E9FD;
+	position:relative;
+	float:right;
+	margin-top:120px;
+}
+.deng_up{
+	margin-left: 20px;
+	float: left;
+}
+.deng_mid{
+	float: left;
+	width: 100%;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+.deng_down{
+	width: 100%;
+	text-align: center;
+    margin-top: 50px;
+}
+
+#zhanghao{
+width:300px;
+height:auto;
+min-height:35px;	
+}
+
+#mima{
+	width:300px;
+	height:auto;
+	min-height:35px;
+}
+#err{
+	height: 30px;
+	float: left;
+	font-size: 15px;
+	color: red;
+	margin-left: 20px;
+	display: none;
+}
+#tijiao{
+	width:320px;
+	height:auto;
+	min-height:40px;
+	cursor: pointer;
+	/*background-image:url(../Images/common/22.png);*/
+}
+#dibu{
+	overflow:hidden;
+	width:100%;
+	height:auto;
+	min-height:150px;
+	min-width:970px;
+	position:relative;
+	border-top:1px solid #DDDDDD;
+	top:20px;
+	
+}
+
+/*reg注册*/
+.mima2{
+	width:300px;
+	height:auto;
+	min-height:35px;
+}

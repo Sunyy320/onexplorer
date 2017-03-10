@@ -1,0 +1,101 @@
+
+<title>Onexplorer探索者乐交流</title>
+<load file="__PUBLIC__/Css/lejiaoliu.css"/>
+
+
+<!--thirdPart中tdto是third_two（第三大部分中的第二部分）的缩写，L代表left，R代表right；第二部分中的lastBedding是指最后的铺垫，可调节其高度来保证<img>的渐变图片与背景契合。-->
+<div id="thirdPart">
+    <div class="line"></div>
+    <img class="back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+    <div class="line"></div>
+    <img class="back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+    <div id="third_one">
+        <div class="third_one_left"><img src="__PUBLIC__/Images/common/logoLe.png"></div>
+        <div class="third_one_leftsmall"><a href="__APP__/Home/happy/addarticle"><img src="__PUBLIC__/Images/common/leLogoSmall.png"></a></div>
+        <div class="third_one_right">
+            <input class="tdoneR_text" type="text" placeholder="请输入目的地搜索相应文章">
+            <input class="tdoneR_submit" type="submit" value="">
+        </div>
+    </div>
+
+
+    <div id="third_two">
+        <!--third_two_left:为乐交流的合集部分，此页旅游攻略的数目是可以再加的，只需复制一个大的<li></li>即可，页面的高度可随内容的增多而变高。而简介旅游攻略部分中的主题（标题）为一行，简介为两行。-->
+        <div class="third_two_left" >
+            <ul class="tdtoL_intro" >
+
+                <volist name="arr" id="vo">
+
+                 <li>
+                    <div class="tdtoL_intro_title"><div><a><{$vo.title}></a></div></div>
+
+                    <div class="tdtoL_intro_author">
+                        <span>作者:<{$vo.username}></span>
+                        <span>目的地:<{$vo.address}></span>
+                        <span>点赞数:<{$vo.supportsum}></span>
+                        <span><{$vo.titletime}></span>
+                    </div>
+
+                    <ul class="tdtoL_intro_pic">
+
+                       <volist name="vo['images']" id="val">
+                           <li><img src="<{$val}>"></li>
+                       </volist>
+
+                    </ul>
+
+                    <div class="tdtoL_intro_content"><{$vo.shortcontent}>.......
+                        <span><a href="<{:U('happy/showcnt')}>?id=<{$vo.id}>&name=<{$vo.username}>">更多+</a></span>
+                    </div>
+
+                    <div class="tdtoL_intro_line"></div>
+                 </li>
+
+                </volist>
+
+            </ul>
+
+            <div class="pagelist"><{$page}></div>
+
+            <div class="tdtoL_intro_tail"></div>
+        </div>
+
+
+
+
+
+
+        <div class="third_two_right">
+            <ul>
+                <div><span>热门分享</span></div>
+
+                <volist name="dianz" id="val">
+                    <li><a href="<{:U('happy/showcnt')}>?id=<{$val.id}>&name=<{$val.username}>"><{$val.title}></a></li>
+                </volist>
+            </ul>
+
+            <div class="bedding"></div>
+            <ul>
+                <div><span>最新交流</span></div>
+                 <volist name="tuij" id="val">
+                     <li><a href="<{:U('happy/showcnt')}>?id=<{$val.id}>&name=<{$val.username}>"><{$val.title}></a></li>
+                 </volist>
+            </ul>
+
+            <!--<div class="bedding"></div>-->
+            <!--<ul>-->
+                <!--<div><span>热门组团</span></div>-->
+                <!--<li>衡山快捷路线......</li>-->
+                <!--<li>张家界完美游戏攻略......</li>-->
+                <!--<li>你不知道的世界窗......</li>-->
+                <!--<li>那些让你忘了拍照......</li>-->
+            <!--</ul>-->
+
+            <div class="lastBedding"></div>
+            <img src="__PUBLIC__/Images/common/Image 11_1.png">
+
+        </div>
+    </div>
+
+</div>
+

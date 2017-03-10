@@ -1,0 +1,129 @@
+
+<title>组团内容</title>
+<script src="__PUBLIC/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/zutuanneirong.css"/>
+<script src="__PUBLIC__/Js/zutuanneirong.js"></script>
+
+
+
+<!-- 中间内容-->
+<div class="ztnr_zhongjianneirong1">
+<div class="ztnr_zhongjianneirong2"><span style="color:blue;font-size:15px;"><a href="#" class="zutuanneirong_zutuanlink">组团</a>->组团内容详情</span></div>
+<!-- 中间左边 -->
+<div class="ztnr_zhongjianzuobian1">
+<div class="ztnr_zhongjianzuobian2">
+<{$tourdata.title}>
+</div>
+
+<div class="ztnr_zhongjianzuobian3">
+<div class="ztnr_zhongjianzuobian4">
+<a href="#"><img src="__PUBLIC__/Images/User/bianpicture/touxiang.png" width="60px" height="60px"/></a></div>
+<div class="ztnr_zhongjianzuobian5">
+<div style="color:blue;"><{$tourdata.uidname}></div>
+<div style="color:blue;">
+<span>发布日期:</span> 
+<span><{$tourdata.time|date='Y-m-d',###}></span>
+<span class="zutuanneirong_konge"></span><span class="zutuanneirong_konge"></span><span class="zutuanneirong_konge"></span><span class="zutuanneirong_konge"></span>
+<span class="ztnr_zhongjianzuobian6">
+<a style="text-decoration:none;" href="#zutuanneirong_huifumiao">回复</a></span> 
+</div>
+</div>
+</div>
+
+<!-- 中间行程简介 -->
+<div class="ztnr_zhongjianxingchengjianjie1">
+
+<div class="ztnr_zhongjianxingchengjianjie2">
+<span>&nbsp;</span>
+</div>
+
+<div class="ztnr_zhongjianxingchengjianjie2">
+<span style="color:red;">@</span>
+<span style="color:grey;">出发地</span>
+<span class="zutuanneirong_konge1"></span>
+<span style="color:blue;"><{$tourdata.start}></span>
+</div>
+
+<div class="ztnr_zhongjianxingchengjianjie2">
+<span style="color:red;">@</span>
+<span style="color:grey;">目的地</span>
+<span class="zutuanneirong_konge1"></span>
+<span style="color:blue;"><{$tourdata.destination}></span>
+</div>
+
+<div class="ztnr_zhongjianxingchengjianjie2">
+<span style="color:red;">@</span>
+<span style="color:grey;">开始日期</span>
+<span class="zutuanneirong_konge1"></span>
+<span style="color:blue;"><{$tourdata.starttime}></span>
+</div>
+
+<div class="ztnr_zhongjianxingchengjianjie2">
+<span style="color:red;">@</span>
+<span style="color:grey;">结束日期</span>
+<span class="zutuanneirong_konge1"></span>
+<span style="color:blue;"><{$tourdata.endtime}></span>
+</div>
+
+</div>
+
+<!-- 中间行程简介结束 -->
+
+
+<!-- 组团内容 -->
+<div class="ztnr_zutuanneirong1">
+<span>组团内容详情：</span>
+<{$tourdata.content}>
+</div>
+<!-- 组团内容结束 -->
+
+
+<div class="ztnr_tanlunlianxi1">
+<span class="zutuanneirong_konge2"></span><span>谈论联系</span>
+</div>
+
+
+<foreach name='replyList' item='vo'>
+<div class="ztnr_huifu1">
+<div class="ztnr_huifu2">
+<a href="#">
+<img src="__PUBLIC__/Images/User/bianpicture/275346.jpg" width="80px" height="75px"></a>
+</div>
+<div class="ztnr_huifu3">
+<div style="color:blue;"><{$vo.uid}></div>
+<div class="ztnr_huifu10"><{$vo.time|date='Y-m-d H:m:s',###}></div>
+<div class="ztnr_huifu4">
+<{$vo.content}>
+</div>
+</div>
+</div>
+</foreach>
+
+
+
+<div class="ztnr_huifu5">
+<span class="zutuanneirong_konge2"></span><span>回复<a name="zutuanneirong_huifumiao"></a></span>
+</div>
+
+<form method="post" action="__APP__/Home/Reply/index" onsubmit="return checked()"> 
+<div class="ztnr_huifu6">
+<textarea name="content" id="content" class="ztnr_huifu7"></textarea>
+<input type="hidden" name="tid" value="<{$tourdata.tid}>" >
+</div>
+<div class="ztnr_huifu9">
+<input type="submit" name="submit" value="回复" style="width:200px;height:40px;background-color:#5B9BD5;color:white;font-size:20px;"/>
+</div>
+</form>
+
+</div>
+<!-- 中间左边结束 -->
+
+<div class="ztnr_zhongjianzuobian">
+</div>
+
+
+</div>
+<!-- 中间内容结束 -->
+
+
+

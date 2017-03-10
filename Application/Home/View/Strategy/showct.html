@@ -1,0 +1,110 @@
+<title>Onexplorer旅游攻略详细页面</title>
+<load file="__PUBLIC__/Css/travelStrategyDetails.css"/>
+<load file="__PUBLIC__/Js/zUI.js"/>
+<load file="__PUBLIC__/Js/travelStrategyDetails.js"/>
+
+
+
+<div id="TSD_thirdPart">
+    <div class="TSD_line"></div>
+    <div id="TSD_article">
+
+        <!--文章左边开始-->
+        <div class="TSD_articleLeft">
+            <ul>
+                <!--标题开始-->
+                <div class="TSD_articleNameAll">
+                    <div class="TSD_articleName"><{$res.shortitle}>——<{$res.longtitle}></div>
+                    <div class="TSD_articleAuthor">By:&nbsp;<span><{$res.username}></span>
+                        <span>地点：<{$res.place}></span></div>
+                    <div class="TSD_articleNamePicture"></div>
+                </div>
+                <!--标题结束-->
+
+                <!--简介-->
+                <li>
+                    <div class="TSD_articleContent">
+                         <{$res['artcontent_all'][0]}>
+                    </div>
+                </li>
+
+                <volist name="res[artcontent_all]" id="vo" offset="1">
+                <li>
+                    <div class="TSD_articleTitle">
+                        <div class="TSD_articleTitleName">
+                            <a name="<{$i}>"><{$res['artitle_all'][$i-1]}></a></div>
+                        <div class="TSD_articleTitleLine"></div>
+                    </div>
+                    <div class="TSD_articleContent">
+                       <{$vo}>
+                    </div>
+
+                </li>
+
+                </volist>	
+
+                <div class="TSD_articleEnd"><div>完结</div></div>
+            </ul>
+
+        </div>
+        <!--文章左边结束-->
+
+        <!--文章右边开始-->
+        <div class="TSD_articleRight">
+            <!--个人信息展示：头像，点赞数-->
+            <div class="TSD_rightOne">
+
+                <div class="TSD_rightOnePicture">
+                    <img src="__PUBLIC__/Images/common/panda.jpg">
+                </div>
+
+                <div class="TSD_rightOneDing">
+                    <div class="TSD_rightOneUp"><{$res.supportsum}></div>
+                    <div class="TSD_rightOneDown" id="dianzan">
+                        <img src="__PUBLIC__/Images/common/ding.png">
+                    </div>
+                </div>
+            </div>
+
+            <!--悬浮框-->
+            <div id="TSD_rightTwo">
+                <div class="TSD_rightTowMuneName">游记目录</div>
+
+                <div id="ademo">
+                    <div>
+
+                       <volist name="res['artitle_all']" id="vo">
+                           <div class="abox" ><a href="#<{$i}>">
+                               <{$i}>/&nbsp;<{$vo}></a></div>
+                       </volist>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--文章右边结束-->
+    </div>
+
+
+
+    <div id="TSD_tail"></div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //点赞，更新数据，点赞数+1，ajax实现
+        $("#dianzan").click(function () {
+            $.ajax({
+                type: "POST",
+                data: "id=<{$res.id}>",
+                url: "__APP__/Home/Strategy/dianzan",
+                success: function (msg) {
+                    var num = <{$res.supportsum}>+1;
+                        $(".TSD_rightOneUp").html(num);
+                        alert(msg);
+                    }
+                 });
+             });
+         });
+</script>

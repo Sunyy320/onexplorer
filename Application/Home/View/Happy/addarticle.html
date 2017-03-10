@@ -1,0 +1,97 @@
+<title>Onexplorer探索者乐交流发布文章</title>
+<load file="__PUBLIC__/Css/postArtic.css"/>
+
+
+<script type="text/javascript" charset="utf-8">
+    window.UEDITOR_HOME_URL = "__ROOT__/Public/Ueditor/";
+    $(document).ready(function () {
+        //UE.getEditor('editor');
+        var editor;
+        var options = {
+            initialFrameWidth:795,        //初化宽度
+            initialFrameHeight:350,        //初化高度
+            focus:false,                 //初始化时，是否让编辑器获得焦点true或false
+            maximumWords:1000,            //允许的最大字符数
+            toolbars:[
+                [ 'source', 'undo', 'redo', 'bold', 'italic', 'underline', 'fontborder',  'fontsize', 'fontfamily', 'justifyleft', 'justifyright', 'justifycenter', 'justifyjustify', 'strikethrough',  'removeformat', 'formatmatch', 'autotypeset', 'pasteplain', '|', 'insertorderedlist', 'insertunorderedlist', 'cleardoc', 'link', 'unlink','insertimage']
+            ],
+            enableAutoSave: false,
+            wordCount:false,         //是否开启字数统计
+            enableContextMenu: false,   //是否开启右击快捷方式
+            scaleEnabled:true,        //编辑框是否可以自动增长，设置为true，为不可以自动增长
+
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("editor");
+
+       //发布内容
+        $("#add_submit").click(function(){
+            var username="<{$Think.session.username}>";
+            if(!$(".add_title").val()||!$(".add_address").val()||!$("#editor").html()){
+                alert("有内容未填写");
+            }else if(username==null||username==""){
+                alert(" 请先登录！");
+            }else{
+                $("#MyForm").submit();
+            }
+        });
+    });
+
+</script>
+<load href="__PUBLIC__/Ueditor/ueditor.config.js"/>
+<load href="__PUBLIC__/Ueditor/ueditor.all.min.js"/>
+
+
+
+
+<div id="PA_thirdPart">
+    <div class="PA_line"></div>
+    <img class="PA_back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+    <div id="PA_third_one">
+        <div class="PA_third_one_left"><img src="__PUBLIC__/Images/common/logoLe.png"></div>
+        <div class="PA_third_one_leftsmall"><a><img src="__PUBLIC__/Images/common/leLogoSmall.png"></a></div>
+        <div class="PA_third_one_right">
+            <from name="" action="" method="get">
+                <input class="PA_tdoneR_text" type="text" placeholder="请输入目的地搜索相应贴">
+                <input class="PA_tdoneR_submit" type="submit" value="">
+            </from>
+        </div>
+    </div>
+</div>
+
+<div id="PA_pageArtiv_all">
+    <form  id='MyForm' method='POST' action="<{:U('happy/add')}>">
+        <div class="PA_pgat_zhuti">
+            <div><img src="__PUBLIC__/Images/common/postOne.jpg"></div>
+            <input type="text" placeholder="给你的文章起一个好名字吧" name="add_title" class="add_title">
+        </div>
+
+        <div class="PA_pgat_line"></div>
+
+        <div class="PA_pgat_place">
+            <div><img src="__PUBLIC__/Images/common/postTwo.jpg"></div>
+            <input type="text" placeholder="请输入景点名" name="add_address" class="add_address">
+        </div>
+
+        <div class="PA_pgat_line"></div>
+
+        <div class="PA_pgat_artic">
+            <div><img src="__PUBLIC__/Images/common/postThree.jpg"></div>
+        </div>
+
+        <!---------------------------------------------->
+        <div class="container">
+            <script id="editor" type="text/plain"  name="content"></script>
+            <!--<textarea id="editor" name="content"></textarea>-->
+          </div>
+
+    </form>
+    <!----------------------------------------------->
+
+    <div class="PA_pgat_post">
+        <img src="__PUBLIC__/Images/common/postFour.jpg" id="add_submit"/>
+    </div>
+
+</div>
+
+

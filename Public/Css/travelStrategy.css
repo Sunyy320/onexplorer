@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------图片轮播---------------------*/
+#banner {
+    position: relative;
+    width: 970px;
+    height: 250px;
+    border: 1px solid #666;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+#banner_list img {
+    width: 970px;
+    height: 250px;
+    border: 0px;
+}
+
+#banner_bg {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    height: 30px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    z-index: 1000;
+    cursor: pointer;
+    width: 970px;
+}
+
+#banner_info {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    height: 22px;
+    color: #fff;
+    z-index: 1001;
+    cursor: pointer
+}
+
+#banner_text {
+    position: absolute;
+    width: 120px;
+    z-index: 1002;
+    right: 3px;
+    bottom: 3px;
+}
+
+#banner ul {
+    position: absolute;
+    list-style-type: none;
+    filter: Alpha(Opacity=80);
+    opacity: 0.8;
+    z-index: 1002;
+    margin: 0;
+    padding: 0;
+    bottom: 3px;
+    right: 5px;
+}
+
+#banner ul li {
+    padding: 0px 8px;
+    float: left;
+    display: block;
+    color: #FFF;
+    background: #6f4f67;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+#banner ul li.on {
+    background-color: #000;
+}
+
+#banner_list a {
+    position: absolute;
+}
+
+/*---------------------------------------------------*/
+
+#TS_article {
+    width: 970px;
+    min-height: 930px;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+#TS_article .TS_articleLeft {
+    width: 210px;
+    min-height: 500px;
+    height: auto;
+    background: #CC9;
+    float: left;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleLeft .TS_leftHeadAll {
+    width: 210px;
+    height: auto;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleLeft .TS_leftHeadPicture {
+    margin-top: 9px;
+    margin-left: 2px;
+    float: left;
+}
+
+#TS_article .TS_articleLeft .TS_leftHead {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #CFC;
+    float: left;
+}
+
+#TS_article .TS_articleLeft .TS_LeftRecommendName {
+    margin-left: 5PX;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #099;
+}
+
+#TS_article .TS_articleLeft .TS_leftRecommend {
+    width: 200px;
+    margin-left: 12px;
+    height: auto;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleLeft .TS_leftRecommend li {
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+
+#TS_article .TS_articleLeft .TS_leftRecommend li a:hover{
+    color:orange;
+}
+#TS_article .TS_articleRight {
+    width: 750px;
+    height: auto;
+    min-height: 930px;
+    float: right;
+    overflow: hidden;
+    background: #FBFAEE;
+}
+
+#TS_article .TS_articleRight ul {
+    width: 750px;
+    height: auto;
+    min-height: 900px;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleRight ul li {
+    width: 750px;
+    min-height: 180px;
+    height: auto;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleRight ul li .TS_textPicture {
+    width: 250px;
+    height: 180px;
+    float: left;
+}
+
+#TS_article .TS_articleRight ul li .TS_textPicture img {
+    width: 220px;
+    height: 152px;
+    margin-top: 14px;
+    margin-left: 15px;
+}
+
+#TS_article .TS_articleRight .TS_textContent {
+    width: 480px;
+    min-height: 150px;
+    height: auto;
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+    overflow: hidden;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textHead {
+    width: 480px;
+    height: auto;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textIntro {
+    width: 480px;
+    min-height: 75px;
+    height: auto;
+    font-size: 14px;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textInfor {
+    width: 300px;
+    min-height: 20px;
+    height: auto;
+    margin-top: 16px;
+    font-size: 15px;
+    float: left;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textInfor img {
+    height: 20px;
+    float: left;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textInfor .TS_inforLocation {
+    margin-top: 2px;
+    float: left;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textInfor .TS_inforAuthor {
+    margin-top: 2px;
+    margin-left: 10px;
+    float: left;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textInfor .TS_inforAuthor span {
+    color: #36F;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textDing img {
+    cursor: pointer;
+    float: right;
+}
+
+#TS_article .TS_articleRight .TS_textContent .TS_textDingnum {
+    margin-top: 20px;
+    margin-left: 105px;
+    font-size: 15px;
+    float: left;
+    color: black;
+}
+
+#TS_article .TS_articleRight .TS_rightPageNum {
+    width: 750px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#TS_article .TS_articleRight .TS_rightPageNum div {
+    float: right;
+    margin-right: 20px;
+}
+
+#TS_article .TS_articleRight .TS_articleRightTail {
+    width: 750px;
+    height: 5px;
+}
+
+#TS_tail {
+    width: 970px;
+    height: 120px;
+    margin: 0px auto 0px;
+}
+
+#TS_thirdPart {
+    width: 100%;
+    height: auto;
+    min-height: 1300px;
+    margin-top: 12px;
+    position: relative;
+    background: url(../Images/common/easyBackground.png) repeat;
+    overflow: hidden;
+}
+
+#TS_thirdPart .TS_line {
+    width: 100%;
+    height: 2px;
+    background: #4472C4;
+}
+
+.pagelist {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 7px 0;
+}
+
+.pagelist a {
+    margin: 0 5px;
+    border: #6185a2 solid 1px;
+    display: inline-block;
+    padding: 2px 6px 1px;
+    line-height: 16px;
+    background: #fff;
+    color: #6185a2;
+}
+
+.pagelist span {
+    margin: 0 5px;
+    border: #6185a2 solid 1px;
+    display: inline-block;
+    padding: 2px 6px 1px;
+    line-height: 16px;
+    color: #6185a2;
+    color: #fff;
+    background: #6185a2;
+}
+

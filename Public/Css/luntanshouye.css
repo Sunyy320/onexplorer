@@ -1,0 +1,411 @@
+body
+{
+margin:0px;
+border:0px;
+padding:0px;
+background-image:url(__PUBLIC__/Images/User/fixedpicture/wenli.jpg);
+
+}
+.luntanshouye_konge
+{
+  margin-right:70px;
+}
+.luntanshouye_konge1
+{
+  margin-right:30px;
+}
+.luntanshouye_konge2
+{
+  margin-right:15px;
+}
+.luntanshouye_onmouse
+{
+	background-color:#E8E8FF;
+}
+.luntanshouye_onmouse:hover
+{
+	background-color:white;
+}
+.luntanshouye_link:link
+{
+   	color:red;
+	text-decoration:none;
+}
+.luntanshouye_link:visited
+{
+   	color:#5B9BD5;
+	text-decoration:none;
+}
+.luntanshouye_link:hover
+{
+   	color:blue;
+	text-decoration:none;
+}
+.luntanshouye_navlink:link
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanshouye_navlink:visited
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanshouye_navlink:hover
+{
+	color:black;
+	text-decoration:none;
+}
+.luntanshouye_currentnavlink
+{
+	color:black;
+	text-decoration:none;
+}
+.luntanshouye_remenhuodonglink:link
+{
+	color:black;
+	text-decoration:underline;	
+}
+.luntanshouye_remenhuodonglink:visited
+{
+	color:black;
+	text-decoration:underline;	
+}
+.luntanshouye_remenhuodonglink:hover
+{
+	color:blue;
+	text-decoration:underline;	
+}
+.luntanshouye_biaotilink:link
+{
+	color:blue;
+	text-decoration:none;
+}
+.luntanshouye_biaotilink:visited
+{
+	color:blue;
+	text-decoration:none;
+}
+.luntanshouye_biaotilink:hover
+{
+	color:blue;
+	text-decoration:underline;
+}
+.luntanshouye_tiezhuxinxi
+{
+	color:grey;
+	text-decoration:none;
+}
+.luntanshouye_fatielink:link
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanshouye_fatielink:visited
+{
+	color:white;
+	text-decoration:none;
+}
+.luntanshouye_fatielink:hover
+{
+	color:yellow;
+	text-decoration:none;
+}
+
+.ltsy_dengluzhuce1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:30px;
+	position:relative;
+	background-color:#F0F0F0;
+}
+.ltsy_dengluzhuce2
+{
+	width:970px;
+	height:auto;
+	min-height:30px;
+	margin:auto;
+	position:relative;
+	font-size:20px;
+	color:#3A9D9A;
+}
+.ltsy_daohangtiao1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:50px;
+	position:relative;
+	background-color:#5B9BD5;
+	
+}
+.ltsy_daohangtiao2
+{
+	width:970px;
+	height:auto;
+	min-height:50px;
+	margin:auto;
+	position:relative;
+	font-size:33px;
+	color:white;
+	vertical-align:middle;
+}
+.ltsy_zhongjianbufen1
+{
+	width:970px;
+	height:auto;
+	min-height:2000px;
+	margin:50px auto 10px auto;
+	padding:0px;
+	position:relative;
+	overflow:hidden;
+
+}
+.ltsy_zhongjianbufen2
+{
+	width:650px;
+	height:auto;
+	min-height:1000px;
+	border:1px solid #E9E9E9;
+	padding:10px;
+	position:relative;
+	float:left;
+
+}
+.ltsy_zhongjianbufen3
+{
+	width:15%;
+	height:25px;
+	position:relative;
+	background-color:#E8E8FF;
+	font-size:15px;
+	color:blue;
+}
+.ltsy_zhongjianbufen4
+{
+	width:96%;
+	height:auto;
+	min-height:200px;
+	margin-top:10px;
+	padding:13px;
+	position:relative;
+	background-color:#E8E8FF;
+	overflow:hidden;
+}
+.ltsy_zhongjianbufen5
+{
+	width:300px;
+	height:200px;
+	margin-right:10px;
+	position:relative;
+	float:left;
+}
+.ltsy_zhongjianbufen6
+{
+	width:300px;
+	height:auto;
+	min-height:200px;
+	position:relative;
+	float:right;
+	font-size:15px;
+	line-height:35px;
+}
+.ltsy_tiezi1
+{
+	width:100%;
+	height:auto;
+	min-height:30px;
+	margin-top:10px;
+	position:relative;
+	background-color:#EDEEF2;
+	font-size:20px;
+}
+.ltsy_tiezimokuai1
+{
+	width:100%;
+	height:auto;
+	min-height:80px;
+	margin-top:10px;
+	border-bottom:1px solid #E8E8FF;
+	position:relative;
+}
+.ltsy_tiezimokuai2
+{
+	width:70px;
+	height:65px;
+	margin-top:15px;
+	margin-right:10px;
+	position:relative;
+	float:left;
+}
+.ltsy_tiezimokuai3
+{
+	width:450px;
+	height:70px;
+	margin-top:10px;
+	position:relative;
+	float:left;
+	font-size:15px;
+	line-height:35px;
+}
+.ltsy_tiezimokuai4
+{
+	width:70px;
+	height:70px;
+	margin-top:10px;
+	position:relative;
+	float:right;
+}
+
+.pagelist {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 7px 0;
+}
+
+.pagelist a {
+    margin: 0 5px;
+    border: #6185a2 solid 1px;
+    display: inline-block;
+    padding: 2px 6px 1px;
+    line-height: 16px;
+    background: #fff;
+    color: #6185a2;
+}
+
+.pagelist span {
+    margin: 0 5px;
+    border: #6185a2 solid 1px;
+    display: inline-block;
+    padding: 2px 6px 1px;
+    line-height: 16px;
+    color: #6185a2;
+    color: #fff;
+    background: #6185a2;
+}
+
+.ltsy_fenyeniu1
+{
+	width:100%;
+	height:auto;
+	min-height:40px;
+	margin-top:10px;
+	position:relative;
+}
+.ltsy_fenyeniu2
+{
+	width:50%;
+	color:blue;
+	font-size:17px;
+	background-color:#EDEDED;
+	cursor:pointer;
+}
+.ltsy_fatietiao1
+{
+	width:100%;
+	height:auto;
+	min-height:30px;
+	position:relative;
+	background-color:#FAFAFA;
+	font-size:20px;
+}
+.ltsy_fatie1
+{
+	width:100%;
+	height:auto;
+	min-height:30px;
+	margin-top:10px;
+	position:relative;
+	background-color:#E8E8FF;
+	font-size:15px;
+}
+.ltsy_fatie2
+{
+	width:500px;
+	height:18px;
+	margin-top:3px;
+}
+.ltsy_fatie3
+{
+	width:500px;
+	height:18px;
+	margin-top:3px;
+	display:none;
+}
+.ltsy_fatie4
+{
+	width:99.2%;
+	height:auto;
+	min-height:200px;
+	border:3px solid #5B9BD5;
+	margin-top:5px;
+	position:relative;
+}
+.ltsy_fatie5
+{
+	width:99%;height:200px; border:0px;color:grey;
+}
+.ltsy_fatie6
+{
+	width:99%;
+	height:200px;
+	border:0px;
+	color:grey;
+	display:none;
+}
+.ltsy_fatie7
+{
+	width:100%;
+	height:50px;
+	margin-top:5px;
+	position:relative;
+}
+.ltsy_fatie8
+{
+	width:200px;
+	height:40px;
+	background-color:#5B9BD5;
+	color:white;
+	font-size:20px;
+}
+.ltsy_youbian1
+{
+	width:260px;
+	height:auto;
+	min-height:1000px;
+	margin:0px;
+	border:1px solid #E9E9E9;
+	padding:10px;
+	position:relative;
+	float:right;
+}
+.ltsy_youbian2
+{
+	width:260px;
+	height:auto;
+	min-height:44px;
+	padding-top:6px;
+	position:relative;
+	background-color:red;
+	font-size:30px;
+}
+.ltsy_lianxilan1
+{
+	width:100%;
+	min-width:970px;
+	height:auto;
+	min-height:300px;
+	position:relative;
+	background-color:#BFBFBF;
+}
+.ltsy_lianxilan2
+{
+	width:970px;
+	height:auto;
+	min-height:250px;
+	margin:auto; 
+	padding-top:50px;
+	position:relative;
+}

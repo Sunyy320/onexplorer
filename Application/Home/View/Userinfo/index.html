@@ -1,0 +1,131 @@
+
+<title>个人xinxi</title>
+<script src="__PUBLIC__/Js/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/gerenxinxi.css"/>
+<script src="__PUBLIC__/Js/gerenxinxi.js"></script>
+
+
+<!--中间部分 -->
+<div class="grxx_zhongjianbufen1">
+<div class="grxx_zhongjianbufen2">
+<div class="grxx_zhongjianbufen3">
+<form method="post" action="" enctype="multipart/form-data">
+<div class="grxx_zhongjianbufen4" id="preview">
+<img id="imghead" src="__PUBLIC__/Images/User/bianpicture/275785.jpg" class="grxx_zhongjianbufen5"/>
+</div>
+<span class="grxx_zhongjianbufen6">
+<input type="file" name="file1" onchange="previewImage(this)" class="grxx_zhongjianbufen7"/></span>
+<input type="submit" id="tupian_queren" name="tupian_queren" value="确认" class="grxx_zhongjianbufen8"/>
+</form>
+</div>
+<div class="grxx_zhongjianbufen9">
+<form method="post" action="" onsubmit="return checked2();">
+<div>
+<span class="gerenxinxi_xiugainichen grxx_zhongjianbufen10"><{$data[0]["uid"]}></span>
+<span>
+<input type="text" name="xiugainichen" id="xiugainichen" class="grxx_zhongjianbufen11"/>
+<input type="submit" name="xiugainichen_queren" id="xiugainichen_queren" value="确认" class="grxx_zhongjianbufen12"/>
+</span>
+</div>
+</form>
+<form method="post" action="" onsubmit="return checked1();">
+<div>
+<span  class="gerenxinxi_xiugaimima grxx_zhongjianbufen13">修改密码</span>
+<span><input type="text" name="xiugaimima" id="xiugaimima" class="grxx_zhongjianbufen14"/></span>
+<span><input type="submit" name="xiugaimima_queren" id="xiugaimima_queren" value="确认" class="grxx_zhongjianbufen15"/></span>
+</div>
+</form>
+<div class="grxx_zhongjianbufen16"><span style="color:red;">*</span><span>(点击昵称,修改密码或头像修改可修改相关资料)</span></div>
+</div>
+</div>
+
+
+<div class="grxx_qiehuantiezi1">
+<span class="gerenxinxi_xiaoshou gerenxinxi_tieziupon gerenxinxi_dianjitiezi1" style="background-color:#E8E8FF;">乐交流帖子</span>
+<span class="gerenxinxi_konge"></span>
+<span class="gerenxinxi_xiaoshou gerenxinxi_tieziupon gerenxinxi_dianjitiezi2">论坛帖子</span>
+<span class="gerenxinxi_konge"></span>
+<span class="gerenxinxi_xiaoshou gerenxinxi_tieziupon gerenxinxi_dianjitiezi3">组团帖子</span>
+<span class="gerenxinxi_konge"></span>
+</div>
+
+
+<div class="grxx_zuobianbufen1">
+
+<foreach name='tourList' item='vo'>
+<div class="gerenxinxi1_huodong">
+<div class="grxx_zutuantiezi1">
+<a href="#"><img height="100px" width="150px" src="__PUBLIC__/Images/User/bianpicture/275785.jpg"/></a>
+</div>
+<div class="grxx_zutuantiezi2">
+<div style="font-size:26px;"><a href="__APP__/Home/Group/index/tid/<{$vo.tid}>" class="gerenxinxi1_biaotilink"><{$vo.title}></a></div>
+<div class="grxx_zutuantiezi3">
+<span>目的地:</span>
+<span><{$vo.destination}></span>
+<span class="gerenxinxi_konge1"></span>
+<span>出发时间:</span>
+<span><{$vo.starttime}></span>
+<span class="gerenxinxi_konge1"></span>
+<span>结束时间:</span>
+<span><{$vo.endtime}></span>
+</div>
+<div class="grxx_zutuantiezi4">
+<span>人数:</span>
+<span><{$vo.number}></span>
+<span class="gerenxinxi_konge"></span>
+<span class="gerenxinxi_konge"></span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<a href="#"><img src="__PUBLIC__/Images/User/fixedpicture/gerenxinxi1.png" title="进入回复" width="30px" height="15px"/></a>
+<a href="#" class="gerenxinxi1_zuzhangxinxilink" title="组长个人信息"><span><{$vo.uidname}></span></a>
+</div>
+</div>
+</div>
+</foreach>
+
+
+
+<foreach name='data' item='vo'>
+<div class="gerenxinxi2_onmouse grxx_luntantiezi1">
+<div class="grxx_luntantiezi2">
+<div style="margin-bottom:8px;"><img src="__PUBLIC__/Images/User/fixedpicture/ltxiaoxitubiao1.png" style="width:50px;height:25px;"/></div>
+<span class="grxx_luntantiezi5"><{$vo.posttime|date='Y-m-d H:m:s',###}></span>
+</div>
+<div class="grxx_luntantiezi3">
+<span style="color:blue;"><a href="__APP__/Home/Post/index/tid/<{$vo.tid}>" class="gerenxinxi2_biaotilink"><{$vo.title}></a></span>
+<div></div>
+<span class="grxx_luntantiezi5"><{$vo.content}></span>
+</div>
+<div class="grxx_luntantiezi4">
+<span class="grxx_luntantiezi5"><a href="#" class="gerenxinxi2_tiezhuxinxi" title="小帖主信息"><{$vo.uid}></a></span>
+<div style="margin-top:20px;"></div>
+<span><a href="#" title="回复"><img src="__PUBLIC__/Images/User/fixedpicture/gerenxinxi1.png" style="width:32px;height:20px;"/></a></span>
+</div>
+</div>
+</foreach>
+
+
+<div class="gerenxinxi3_lejiaoliutiezi">
+<div class="grxx_lejiaoliutiezi1"><span class="gerenxinxi_konge2"></span>
+<a href="#" class="gerenxinxi3_biaotilink"><span>去哪儿旅游好一点？求大神推荐。。。。。。</span></a></div>
+<div class="grxx_lejiaoliutiezi2"><span class="gerenxinxi_konge2"></span><span>偶然发现一篇不错的时刻表文，不敢独享，特转来 </span></div>
+<div class="grxx_lejiaoliutiezi3"><span class="gerenxinxi_konge2"></span>
+<span>作者:</span>
+<span>brant</span>
+<span class="gerenxinxi_konge"></span>
+<span>浏览:</span>
+<span>(</span>
+<span>20</span>
+<span>)</span>
+<span class="gerenxinxi_konge"></span>
+<span>2016-10-23</span>
+<span class="gerenxinxi_konge"></span>
+</div>
+</div>
+
+
+
+</div>
+<div class="grxx_youbian1">
+</div>
+</div>
+<!-- 中间部分结束 -->

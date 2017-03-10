@@ -1,0 +1,97 @@
+<title>发表旅游攻略页面</title>
+<load file="__PUBLIC__/Css/postArtic.css"/>
+
+
+<script type="text/javascript" charset="utf-8">
+    window.UEDITOR_HOME_URL = "__ROOT__/Public/Ueditor/";
+    $(document).ready(function () {
+        //UE.getEditor('editor');
+        var editor;
+        var options = {
+            initialFrameWidth:795,        //初化宽度
+            initialFrameHeight:600,        //初化高度
+            focus:false,                 //初始化时，是否让编辑器获得焦点true或false
+            maximumWords:1000,            //允许的最大字符数
+            toolbars:[
+                [ 'source', 'undo', 'redo', 'bold', 'italic', 'underline', 'fontsize', 'fontfamily', 'justifyleft', 'justifyright', 'justifycenter', 'justifyjustify', 'removeformat', 'formatmatch', 'autotypeset', 'pasteplain', '|', 'insertorderedlist', 'insertunorderedlist', 'cleardoc', 'link', 'unlink','insertimage','paragraph','addparagraph']
+            ],
+            enableAutoSave: false,
+            wordCount:false,         //是否开启字数统计
+            enableContextMenu: false,   //是否开启右击快捷方式
+            paragraph:{'p':'','h2':''},//标题设置
+            scaleEnabled:true,//文本框是否可以自动增长，设置为true，不可以，形成滚动条
+        };
+        editor = new UE.ui.Editor(options);
+        editor.render("editor");
+
+        //发布内容
+        $("#add_submit").click(function(){
+            var username="<{$Think.session.username}>";
+            if(!$(".add_title").val()||!$(".add_address").val()||!$("#editor").html()){
+                alert("有内容未填写");
+            }else if(username==null||username==""){
+                alert(" 请先登录！");
+            }else{
+                $("#MyForm").submit();
+            }
+        });
+    });
+
+</script>
+<load href="__PUBLIC__/Ueditor/ueditor.config.js"/>
+<load href="__PUBLIC__/Ueditor/ueditor.all.min.js"/>
+
+
+
+
+<div id="PA_thirdPart">
+    <div class="PA_line"></div>
+    <img class="PA_back_hai" src="__PUBLIC__/Images/common/hai.jpg">
+
+</div>
+
+
+<div id="PA_pageArtiv_all">
+    <form  id='MyForm' method='POST' action="__APP__/Home/Strategypost/add">
+        <div class="PA_pgat_zhuti">
+            <div><img src="__PUBLIC__/Images/common/postOne.jpg"></div>
+            <input type="text" placeholder="给你的文章起一个好名字吧" name="longtitle" class="add_title">
+        </div>
+
+        <div class="PA_pgat_line"></div>
+
+
+        <div class="PA_pgat_zhuti">
+            <div><img src="__PUBLIC__/Images/common/postFive.jpg"></div>
+            <input type="text" placeholder="给你的文章起一个好名字吧" name="shortitle" class="add_title">
+        </div>
+
+        <div class="PA_pgat_line"></div>
+
+
+        <div class="PA_pgat_place">
+            <div><img src="__PUBLIC__/Images/common/postTwo.jpg"></div>
+            <input type="text" placeholder="请输入景点名" name="place" class="add_address">
+        </div>
+
+        <div class="PA_pgat_line"></div>
+
+        <div class="PA_pgat_artic">
+            <div><img src="__PUBLIC__/Images/common/postThree.jpg"></div>
+        </div>
+
+        <!---------------------------------------------->
+        <div class="container">
+            <script id="editor" type="text/plain"  name="content"></script>
+        </div>
+
+    </form>
+    <!----------------------------------------------->
+
+    <div class="PA_pgat_post">
+        <img src="__PUBLIC__/Images/common/postFour.jpg" id="add_submit"/>
+    </div>
+
+</div>
+
+
